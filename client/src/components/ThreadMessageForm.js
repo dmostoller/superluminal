@@ -90,7 +90,7 @@ function PostCommentForm({onAddMessage, threadId, setVisible, mobile}){
                     >
                     </i>
                    }
-                      {(threadId !==1) ?
+                      {(threadId !==25) ?
                       <>
                       <em data-emoji=":globe_with_meridians:" className="small link" onClick={() => setShowGifPicker((val) => !val)}></em>
                       <em data-emoji=":grinning:" className="small link" onClick={() => setShowPicker((val) => !val)}></em>
