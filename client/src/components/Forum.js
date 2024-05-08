@@ -66,7 +66,7 @@ function Forum() {
         showAddThread()
     } 
     
-  
+  console.log(selectedThread)
 
     return (
         <>
