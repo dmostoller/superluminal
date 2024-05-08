@@ -10,7 +10,7 @@ import MobileForum from './MobileForum'
 
 function Forum() {
     const [threads, setThreads] = useState([]);  
-    const [selectedThread, setSelectedThread] = useState(1);
+    const [selectedThread, setSelectedThread] = useState(21);
     const [searchVal, setSearchVal] = useState();
     const [isFormVis, setIsFormVis] = useState();
     const {user} = useUser();
