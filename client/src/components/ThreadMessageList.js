@@ -55,7 +55,7 @@ export default function ThreadMessageList({threadId, searchVal, setVisible, mobi
     return(
         mobile == true ?
         <>
-            <div className="ui resizable scrolling inverted attached segment" id="scrollWindow" style={{height: "535px"}}>
+            <div className="ui resizable scrolling inverted attached segment" id="scrollWindow" style={{height: "500px"}}>
                 <div className="ui inverted comments">
                     {threadMessages}
                     <div ref={divRef} />
