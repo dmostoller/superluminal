@@ -57,7 +57,7 @@ export default function ThreadMessage({messageObj, onDeleteMessage, messageId}) 
                 {/* <em data-emoji=":astonished:" class="small"></em> */}
                 { user ? 
                  (user.id == messageObj.user_id) || isAdmin ? ( 
-                    <button onClick={handleDeleteMessage} className="ui circular delete inverted icon violet button mini"><i className="trash icon"></i></button>
+                    <a onClick={handleDeleteMessage}>Delete</a>
                 ):
                 <></>
                 : <></>
