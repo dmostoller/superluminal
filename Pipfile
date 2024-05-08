@@ -19,6 +19,7 @@ honcho = "*"
 importlib-resources = "*"
 psycopg2-binary = "*"
 faker = "*"
+geopy = "*"
 
 
 [requires]
