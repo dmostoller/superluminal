@@ -6,9 +6,6 @@ import Picker from "emoji-picker-react";
 import GifPicker from 'gif-picker-react';
 import { Link } from "react-router-dom";
 
-
-// const REACT_APP_TENOR_API_KEY='AIzaSyD8IIaxutwoxDDPdfZAC33_vACCtuLSZIs';
-
 function PostCommentForm({onAddMessage, threadId, setVisible, mobile}){
     const [error, setError] = useState(null);
     const {user} = useUser();
