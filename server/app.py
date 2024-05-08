@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Standard library imports
 # Remote library imports
-from flask import request, abort, make_response, jsonify, request, session
+from flask import request, abort, make_response, jsonify, render_template, request, session
 from flask_restful import Resource
 from sqlalchemy.exc import IntegrityError
 from wtforms.validators import ValidationError
@@ -24,9 +24,11 @@ geolocator = Nominatim(user_agent="superluminal")
 
 # Views go here!
 
-@app.route('/')
-def index():
-    return '<h1>Project Server</h1>'
+@app.route("/", defaults={'path': ''})
+@app.route("/<string:path>")
+@app.route("/<path:path>")
+def index(path):
+    return render_template("index.html")
 
 class Users(Resource):
     def get(self):
