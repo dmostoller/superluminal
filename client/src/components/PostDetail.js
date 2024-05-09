@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 import { useUser } from "../context/user";
 import { useAdmin } from "../context/admin";
 import PostCommentsList from "./PostCommentsList";
+import { FacebookShareButton, FacebookIcon } from 'react-share';
 
 function PostDetail(){
     const [post, setPost] = useState({})
@@ -29,8 +30,8 @@ function PostDetail(){
             })
         }
     }    
-    const linkForFB = `https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsuperluminal.onrender.com%2Fposts%2F${id}&amp;src=sdkpreparse class=fb-xfbml-parse-ignore` 
-    
+    url = "https://superluminal.onrender.com/posts/"
+
     return (
         <div className="ui container" style={{paddingTop:"5px", marginTop: "40px", minHeight:"100vh"}}>
         <div style={{marginTop: "10px"}} className="ui inverted horizontal card fluid">
@@ -48,7 +49,13 @@ function PostDetail(){
                             <p>{post.content}</p>
                         </div>
                         <div style={{padding: "10px"}}>
-                            <Link to="/" className="circular ui icon violet button"><i className="undo icon"></i></Link>
+                        <FacebookShareButton
+                            url={url + post.id}    //eg. https://www.example.com
+                            quotes={post.content}  //"Your Quotes"
+                        >
+                            <FacebookIcon />
+                        </FacebookShareButton> 
+                            {/* <Link to="/" className="circular ui icon violet button"><i className="undo icon"></i></Link>
                             <Link to={linkForFB}
                             target="_blank"
                             className="circular ui icon facebook button"  
@@ -56,7 +63,7 @@ function PostDetail(){
                             data-tooltip="Share to Facebook" 
                             data-position="bottom center">
                                     <i class="facebook icon"></i>
-                            </Link>
+                            </Link> */}
                   
                             { user && isAdmin ? ( 
                             <>
