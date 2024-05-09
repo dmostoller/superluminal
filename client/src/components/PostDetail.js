@@ -29,7 +29,7 @@ function PostDetail(){
             })
         }
     }    
-    const linkForFB = `https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsuperluminal.onrender.com%2Fposts%2F${id}&amp;src=sdkpreparse`
+    const linkForFB = `https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsuperluminal.onrender.com%2Fposts%2F${id}&amp;src=sdkpreparse class=fb-xfbml-parse-ignore` 
     
     return (
         <div className="ui container" style={{paddingTop:"5px", marginTop: "40px", minHeight:"100vh"}}>
