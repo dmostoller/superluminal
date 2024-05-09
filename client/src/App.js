@@ -30,6 +30,7 @@ import Forum from "./components/Forum.js";
 import SearchResults from "./components/SearchResults.js";
 import ReleaseDetail from "./components/ReleaseDetail.js";
 import FormTest from "./components/TestForm.js";
+import HelmetMetaData from "./components/HelmetMetaData.js";
 
 
 
@@ -68,7 +69,9 @@ function App() {
   const API_KEY = process.env.REACT_APP_YOUTUBE_API_KEY
   // console.log(API_KEY)
   return (
+
   <div style={{backgroundColor: "#303030"}} className="App">
+    <HelmetMetaData></HelmetMetaData>
     <Nav onLogout={handleLogout}/>
     <ToastContainer/>
       <Routes>

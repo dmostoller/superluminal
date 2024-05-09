@@ -5,6 +5,7 @@ import { useUser } from "../context/user";
 import { useAdmin } from "../context/admin";
 import PostCommentsList from "./PostCommentsList";
 import { FacebookShareButton, FacebookIcon } from 'react-share';
+import HelmetMetaData from "./HelmetMetaData";
 
 function PostDetail(){
     const [post, setPost] = useState({})
@@ -30,7 +31,7 @@ function PostDetail(){
             })
         }
     }    
-    url = "https://superluminal.onrender.com/posts/"
+    const url = `https://superluminal.onrender.com/posts/${id}`
 
     return (
         <div className="ui container" style={{paddingTop:"5px", marginTop: "40px", minHeight:"100vh"}}>
@@ -49,13 +50,19 @@ function PostDetail(){
                             <p>{post.content}</p>
                         </div>
                         <div style={{padding: "10px"}}>
-                        <FacebookShareButton
-                            url={url + post.id}    //eg. https://www.example.com
-                            quotes={post.content}  //"Your Quotes"
+                        <HelmetMetaData title={post.title}
+                        description={post.content}
+                        image={post.image_url}></HelmetMetaData>
+                        <FacebookShareButton className="circular ui icon facebook button" 
+                        url={url}
+                        data-inverted="" 
+                        data-tooltip="Share to Facebook" 
+                        data-position="bottom center"
                         >
-                            <FacebookIcon />
+                        <i class="facebook icon"></i>
                         </FacebookShareButton> 
-                            {/* <Link to="/" className="circular ui icon violet button"><i className="undo icon"></i></Link>
+                             <Link to="/" className="circular ui icon violet button"><i className="undo icon"></i></Link>
+                             {/*
                             <Link to={linkForFB}
                             target="_blank"
                             className="circular ui icon facebook button"  

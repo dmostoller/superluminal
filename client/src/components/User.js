@@ -15,7 +15,7 @@ export default function User () {
     }
     
     useEffect(() => {
-        if (user.id === null) {
+        if (user.id == null) {
             navigate('/')
         }
         fetch(`/saved_by_user/${user.id}`)
