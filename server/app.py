@@ -202,8 +202,8 @@ class PostsById(Resource):
         response = make_response("", 204)
         return response
 
-api.add_resource(Posts, '/posts')
-api.add_resource(PostsById, '/posts/<int:id>')
+api.add_resource(Posts, '/post')
+api.add_resource(PostsById, '/post/<int:id>')
 
 class Events(Resource):
     def get(self):
@@ -263,8 +263,8 @@ class EventsById(Resource):
         return response
 
 
-api.add_resource(Events, '/events')
-api.add_resource(EventsById, '/events/<int:id>')
+api.add_resource(Events, '/event')
+api.add_resource(EventsById, '/event/<int:id>')
 
 
 class Releases(Resource):
@@ -330,8 +330,8 @@ class ReleasesById(Resource):
         response = make_response("", 204)
         return response
     
-api.add_resource(Releases, '/releases')
-api.add_resource(ReleasesById, '/releases/<int:id>')
+api.add_resource(Releases, '/release')
+api.add_resource(ReleasesById, '/release/<int:id>')
 
 class Tracks(Resource):
     def get(self):

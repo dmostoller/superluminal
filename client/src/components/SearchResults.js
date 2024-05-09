@@ -13,7 +13,7 @@ function SearchResults() {
 
 
     useEffect(() => {
-        fetch(`/releases`)
+        fetch(`/release`)
         .then((res) => res.json())
         .then((releases) => {setReleases(releases)})
       }, []);
@@ -40,7 +40,7 @@ function SearchResults() {
     // console.log(searchResults)
 
     useEffect(() => {
-        fetch(`/posts`)
+        fetch(`/post`)
         .then((res) => res.json())
         .then((posts) => {setPosts(posts)})
       }, []);
@@ -65,7 +65,7 @@ function SearchResults() {
     })
 
     useEffect(() => {
-        fetch(`/events`)
+        fetch(`/event`)
         .then((res) => res.json())
         .then((events) => {setEvents(events)})
       }, []);
@@ -99,7 +99,7 @@ function SearchResults() {
             <h4 style={{padding: "50px"}} className="ui horizontal inverted divider">Search Results</h4>
          }
             <div className="ui centered equal width grid" style={{marginBottom: "25px"}}>
-                <div className="ui inverted centered stackable five link cards">
+                <div className="ui five stackable inverted centered link cards">
                 { (searchResults.length === 0) ?
                     <></>
                 :

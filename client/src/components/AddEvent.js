@@ -32,7 +32,7 @@ function AddEvent() {
         },
         validationSchema: formSchema,
         onSubmit: (values) => {
-          fetch("/events", {
+          fetch("/event", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

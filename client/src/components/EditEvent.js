@@ -14,7 +14,7 @@ function EditEvent() {
 
 
   useEffect(() => {
-      fetch(`/events/${id}`)
+      fetch(`/event/${id}`)
       .then((res) => res.json())
       .then((event) => {
         setEvent(event)
@@ -45,7 +45,7 @@ function EditEvent() {
         },
         validationSchema: formSchema,
         onSubmit: (values) => {
-          fetch(`/events/${id}`, {
+          fetch(`/event/${id}`, {
             method: "PATCH",
             headers: {
               "Content-Type": "application/json",

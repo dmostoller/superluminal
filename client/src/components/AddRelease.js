@@ -34,7 +34,7 @@ function AddRelease() {
         },
         validationSchema: formSchema,
         onSubmit: (values) => {
-          fetch("/releases", {
+          fetch("/release", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

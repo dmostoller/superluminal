@@ -10,7 +10,7 @@ function PostsList () {
     const { isAdmin } = useAdmin()
 
     useEffect(() => {
-      fetch(`/posts`)
+      fetch(`/post`)
       .then((res) => res.json())
       .then((posts) => {setPosts(posts)})
     }, []);

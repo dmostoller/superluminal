@@ -39,7 +39,7 @@ export default function Release({id, title, artist, record_label, description, d
 
     const handleDeleteRelease = (e) => {
         if(window.confirm("Are you sure you want to delete this release?")){ 
-        fetch(`/releases/${id}`,{
+        fetch(`/release/${id}`,{
           method:"DELETE"
         })
         .then(() => {

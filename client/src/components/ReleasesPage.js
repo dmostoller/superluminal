@@ -10,7 +10,7 @@ function ReleasesPage() {
     const [releases, setReleases] = useState([])
 
     useEffect(() => {
-        fetch(`/releases`)
+        fetch(`/release`)
         .then((res) => res.json())
         .then((releases) => {setReleases(releases)})
       }, []);

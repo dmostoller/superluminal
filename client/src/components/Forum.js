@@ -11,7 +11,7 @@ import MobileForum from './MobileForum'
 function Forum() {
     const [threads, setThreads] = useState([]);  
     const [selectedThread, setSelectedThread] = useState(25);
-    
+
     const [searchVal, setSearchVal] = useState();
     const [isFormVis, setIsFormVis] = useState();
     const {user} = useUser();
@@ -86,7 +86,7 @@ function Forum() {
             /> 
             </div>
             :
-            <div className="ui grid" style={{width:"90%", margin:"auto", minHeight:"100vh", marginTop:"40px"}}>
+            <div className="ui grid" style={{width:"90%", margin:"auto", minHeight:"95vh", marginTop:"40px"}}>
                 <div className="six wide wide left attached column" style={{marginTop: "100px"}}>
                     <div className="ui inverted fluid large vertical pointing menu">
                         <div className='item'>

@@ -13,14 +13,14 @@ function PostDetail(){
     const {isAdmin} = useAdmin()
 
     useEffect(() => {
-        fetch(`/posts/${id}`)
+        fetch(`/post/${id}`)
         .then((res) => res.json())
         .then((post) => setPost(post))
     }, [id]);
 
     const handleDeletePost = (e) => {
         if (window.confirm("Are you sure you want to delete this post?")) {
-        fetch(`/posts/${id}`, {
+        fetch(`/post/${id}`, {
             method: "DELETE"
             })
             .then(() => {

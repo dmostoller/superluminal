@@ -13,7 +13,7 @@ function EditRelease() {
 
 
   useEffect(() => {
-      fetch(`/releases/${id}`)
+      fetch(`/release/${id}`)
       .then((res) => res.json())
       .then((release) => {
         setRelease(release)
@@ -46,7 +46,7 @@ function EditRelease() {
         },
         validationSchema: formSchema,
         onSubmit: (values) => {
-          fetch(`/releases/${id}`, {
+          fetch(`/release/${id}`, {
             method: "PATCH",
             headers: {
               "Content-Type": "application/json",

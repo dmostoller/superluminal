@@ -23,7 +23,7 @@ export default function ReleaseDetail() {
     }
 
     useEffect(() => {
-        fetch(`/releases/${id}`)
+        fetch(`/release/${id}`)
         .then((res) => res.json())
         .then((release) => {
             setRelease(release)
@@ -42,7 +42,7 @@ export default function ReleaseDetail() {
 
     const handleDeleteRelease = (e) => {
         if(window.confirm("Are you sure you want to delete this release?")){ 
-        fetch(`/releases/${id}`,{
+        fetch(`/release/${id}`,{
           method:"DELETE"
         })
         .then(() => {

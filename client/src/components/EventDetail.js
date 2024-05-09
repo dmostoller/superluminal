@@ -13,14 +13,14 @@ function EventDetail(){
     
 
     useEffect(() => {
-        fetch(`/events/${id}`)
+        fetch(`/event/${id}`)
         .then((res) => res.json())
         .then((event) => setEvent(event))
     }, [id]);
 
     const handleDeleteEvent = (event) => {
         if (window.confirm("Are you sure you want to delete this event?")) {
-        fetch(`/events/${id}`, {
+        fetch(`/event/${id}`, {
             method: "DELETE"
             })
             .then(() => {

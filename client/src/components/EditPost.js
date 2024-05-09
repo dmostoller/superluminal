@@ -12,7 +12,7 @@ function EditPost() {
     const [imageLink, setImageLink] = useState("");
 
     useEffect(() => {
-      fetch(`/posts/${id}`)
+      fetch(`/post/${id}`)
       .then((res) => res.json())
       .then((post) => {
         setPost(post)
@@ -37,7 +37,7 @@ function EditPost() {
         },
         validationSchema: formSchema,
         onSubmit: (values) => {
-          fetch(`/posts/${id}`, {
+          fetch(`/post/${id}`, {
             method: "PATCH",
             headers: {
               "Content-Type": "application/json",

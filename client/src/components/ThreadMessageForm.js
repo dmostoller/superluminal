@@ -85,7 +85,7 @@ function PostCommentForm({onAddMessage, threadId, setVisible, mobile}){
                   <div className="ui fluid transparent inverted input" >
                   {mobile && 
                     <i className="large hamburger icon" 
-                    style={{paddingTop: "6px"}}
+                    style={{paddingTop: "5px"}}
                     onClick={setVisible}
                     >
                     </i>

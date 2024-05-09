@@ -7,7 +7,7 @@ export default function SavedItem({ releaseId, id, onDeleteSaved }) {
     const [release, setRelease] = useState({});
 
     useEffect(() => {
-        fetch(`/releases/${releaseId}`)
+        fetch(`/release/${releaseId}`)
         .then((res) => res.json())
         .then((release) => setRelease(release))
     }, [releaseId]);
