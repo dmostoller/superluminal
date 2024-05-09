@@ -15,7 +15,7 @@ export default function User () {
     }
     
     useEffect(() => {
-        if (user.id == null) {
+        if (!user.id) {
             navigate('/')
         }
         else {
