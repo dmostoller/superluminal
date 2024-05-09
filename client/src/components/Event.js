@@ -5,7 +5,7 @@ export default function Event ({id, name, venue, location, details, image_url, e
 
     return (
         <div className="ui container fluid" style={{marginTop: "25px"}}>
-            <div className="ui horizontal inverted card fluid" style={{marginBottom: "0px"}}>
+            <Link to={`/events/${id}`} className="ui horizontal inverted card fluid" style={{marginBottom: "0px"}}>
                 <div >
                     <img className="ui large image" src={image_url} alt={name} ></img>
                 </div>
@@ -15,11 +15,11 @@ export default function Event ({id, name, venue, location, details, image_url, e
                     <div className="description">{venue}</div>
                     <div className="description">{location}</div>                                   
                     <div className="description">{details}</div>
-                    <div style={{paddingTop: "25px", float: "left"}}> 
+                    {/* <div style={{paddingTop: "25px", float: "left"}}> 
                         <Link to={`/events/${id}`}  className="ui circular button violet small">View Event</Link>
-                    </div>
+                    </div> */}
                 </div>
-            </div>
+            </Link>
         </div>
     );
 }
