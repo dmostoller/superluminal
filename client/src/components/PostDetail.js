@@ -29,7 +29,7 @@ function PostDetail(){
             })
         }
     }    
-    const linkForFB = `https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.kabayun.com%2Fsuperluminal&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore`
+    const linkForFB = `https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsuperluminal.onrender.com%2Fposts%2F${id}&amp;src=sdkpreparse`
     
     return (
         <div className="ui container" style={{paddingTop:"5px", marginTop: "40px", minHeight:"100vh"}}>
@@ -51,7 +51,7 @@ function PostDetail(){
                             <Link to="/" className="circular ui icon violet button"><i className="undo icon"></i></Link>
                             <Link to={linkForFB}
                             target="_blank"
-                            class="circular ui icon facebook button"  
+                            className="circular ui icon facebook button"  
                             data-inverted="" 
                             data-tooltip="Share to Facebook" 
                             data-position="bottom center">

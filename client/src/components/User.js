@@ -2,16 +2,22 @@ import React, { useState, useEffect } from "react";
 import { useUser } from "../context/user";
 import SavedList from "./SavedList";
 import EditUser from "./EditUser";
+import { useNavigate } from "react-router-dom";
 
 export default function User () {
     const [showEdit, setShowEdit] = useState(false);
     const {user} = useUser();
     const [savedItems, setSavedItems] = useState([]);
+    const navigate = useNavigate()
 
     function showEditForm() {
         setShowEdit(!showEdit)
     }
     
+    if (!user) {
+        navigate('/')
+    }
+
     useEffect(() => {
         fetch(`/saved_by_user/${user.id}`)
         .then((res) => res.json())
