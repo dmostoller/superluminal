@@ -605,13 +605,17 @@ class ForumMessagesByThreadId(Resource):
 api.add_resource(ForumMessagesByThreadId, '/messages_by_thread_id/<int:id>')
 
 
+@app.errorhandler(404)
+def not_found(e):
+    return render_template('index.html')
+
 @app.errorhandler(NotFound)
 def handle_not_found(e):
     response = make_response(
         {"message": "Not Found: Sorry the resource you are looking for does not exist"},
         404,
     )
-    return response
+    return render_template('index.html')
 
 @app.errorhandler(Unauthorized)
 def handle_unauthorized(e):
