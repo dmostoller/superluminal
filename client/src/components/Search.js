@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom"
 import React, {useState} from "react";
 
 
-function Search() {
+function Search({deviceSize}) {
     const navigate = useNavigate();
     const [searchVal, setSearchVal] = useState()
 
@@ -15,9 +15,10 @@ function Search() {
 
     return (
         <>
-        
         <div style={{justifyContent: 'flex-end'}} className="ui category search item">
         <form onSubmit={handleSearch} id="search">
+
+        {(deviceSize <= 768) ? 
             <div className="ui transparent inverted icon input" style={{maxWidth: "100px"}}>
                 <input 
                 className="prompt" 
@@ -29,6 +30,19 @@ function Search() {
                 </input>
                 <i className="search link icon"></i>
             </div>
+            :
+            <div className="ui transparent inverted icon input">
+                <input 
+                className="prompt" 
+                type="text" 
+                id="search" 
+                value={searchVal} 
+                placeholder="Search..."
+                onChange={(e) => setSearchVal(e.target.value)}>
+                </input>
+                <i className="search link icon"></i>
+            </div>
+            }
             </form>
         </div>
         </>

@@ -57,7 +57,7 @@ function Nav({onLogout}) {
         </>
         }
             <div className='right menu'>
-                <Search/>
+                <Search deviceSize={deviceSize}/>
             </div>
             <div className="item">
                 { !user ? (
