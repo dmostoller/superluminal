@@ -18,10 +18,11 @@ export default function User () {
         if (user.id == null) {
             navigate('/')
         }
+        else {
         fetch(`/saved_by_user/${user.id}`)
         .then((res) => res.json())
         .then((savedItems) => {setSavedItems(savedItems)})
-      }, [user.id]);
+    }}, [user.id]);
 
     const deleteSaved = (deleted_id) => {
         setSavedItems(savedItems => savedItems.filter((savedItem) => savedItem.id !== deleted_id))

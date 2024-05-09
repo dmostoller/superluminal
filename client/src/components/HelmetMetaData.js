@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 
 export default function HelmetMetaData(props) {
    let location = useLocation();
-   let currentUrl = "https//superluminal.onrender.com" + location.pathname;
+   let currentUrl = "https//superluminal.onrender.com/" + location.pathname;
    let quote = props.quote !== undefined ? props.quote : "";
    let title = props.title !== undefined ? props.title : "Superluminal - Peace, Love & Psytrance";
    let image = props.image !== undefined ? props.image : "https://static.wixstatic.com/media/1d469b_3bedb45162264b3598e6d9a9d90e4e2e~mv2.png/v1/fill/w_1230,h_680,fp_0.50_0.50,q_90,usm_0.66_1.00_0.01,enc_auto/1d469b_3bedb45162264b3598e6d9a9d90e4e2e~mv2.png";
@@ -39,6 +39,7 @@ return (
      <meta content="image/*" property="og:image:type" />
      <meta property="og:url" content={currentUrl} />
      <meta property="og:site_name" content="CampersTribe" />
-     <meta property="og:description" content={description} />    </Helmet>
+     <meta property="og:description" content={description} />    
+     </Helmet>
 );
 }
