@@ -48,11 +48,6 @@ function PostDetail(){
                             <p>{post.content}</p>
                         </div>
                         <div style={{padding: "10px"}}>
-                            <meta property="og:url"                content="https://superluminal.onrender.com/" />
-                            <meta property="og:type"               content="post" />
-                            <meta property="og:title"              content={post.title} />
-                            <meta property="og:description"        content={post.content} />
-                            <meta property="og:image"              content={post.image_url} />
                             <Link to="/" className="circular ui icon violet button"><i className="undo icon"></i></Link>
                             <Link to={linkForFB}
                             target="_blank"

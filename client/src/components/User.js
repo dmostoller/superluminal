@@ -14,11 +14,10 @@ export default function User () {
         setShowEdit(!showEdit)
     }
     
-    if (!user) {
-        navigate('/')
-    }
-
     useEffect(() => {
+        if (user.id === null) {
+            navigate('/')
+        }
         fetch(`/saved_by_user/${user.id}`)
         .then((res) => res.json())
         .then((savedItems) => {setSavedItems(savedItems)})
