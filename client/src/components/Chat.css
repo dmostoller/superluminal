@@ -1,0 +1,248 @@
+/* my styles  */
+:root {
+    --chat-primary-bg: #6435C9;
+    --chat-primary-color: #fff;
+    --chat-bubble-bg: #fff;
+    --chat-bubble-color: rgba(0, 0, 0, .8);
+    --chat-scroll-track-color: #f1f1f1;
+    --chat-scroll-color: #7a7676;
+}
+
+.robot-avatar {
+    border-radius:  100%;
+    border-style: dotted;
+    border-color: #2d2d2d;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    /* float: left; */
+    margin:  0 10px 0 0;
+}
+
+.bubble-container {
+    width: 100%;
+    position: static;
+    margin: 20px auto;
+    clear: both;
+}
+
+.chat-bubble {
+    position: relative;
+    padding: 5px;
+    width: 600px;
+    max-width: 80%;
+}
+
+.bubble-container .left_bubble {
+    float: left;
+    margin-left: 3px;
+}
+
+.bubble-container .right_bubble {
+    float: right;
+    margin-right: 3px !important;
+}
+
+.clear {
+    clear: both;
+}
+
+.start-chat {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+/* Scrollbar styling */
+.start-chat::-webkit-scrollbar {
+    width: 5px;
+    /* Adjust scrollbar width */
+}
+
+.start-chat::-webkit-scrollbar-thumb {
+    background-color: var(--chat-scroll-color);
+    /* Adjust thumb color */
+    border-radius: 5px;
+    /* Adjust thumb border radius */
+}
+
+.start-chat::-webkit-scrollbar-track {
+    background-color: var(--chat-scroll-track-color);
+    /* Adjust track color */
+}
+
+#assistant-chat {
+    box-sizing: border-box !important;
+    outline: none !important;
+    position: fixed;
+    width: 600px;
+    max-width: 100% !important;
+    border-radius: 10px;
+    box-shadow: 0 1px 15px var(--chat-primary-bg);
+    bottom: 90px;
+    right: 30px;
+    overflow: hidden;
+    z-index: 10000000 !important;
+    animation-name: showchat;
+    animation-duration: 1s;
+    transform: scale(1);
+    background-color: #fff;
+}
+
+.header-chat {
+    background: var(--chat-primary-bg);
+    color: var(--chat-primary-color);
+    padding: 20px;
+}
+
+.header-chat p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.head-home {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+
+.start-chat .blanter-msg {
+    display: flex;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    border-top: solid 1px var(--primary-bg);
+}
+
+a.close-chat {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    color: var(--chat-primary-color);
+    font-size: 30px;
+    text-decoration: none;
+}
+
+
+@keyframes ZpjSY {
+    0% {
+        background-color: rgb(182, 181, 186);
+    }
+
+    15% {
+        background-color: rgb(17, 17, 17);
+    }
+
+    25% {
+        background-color: rgb(182, 181, 186);
+    }
+}
+
+@keyframes hPhMsj {
+    15% {
+        background-color: rgb(182, 181, 186);
+    }
+
+    25% {
+        background-color: rgb(17, 17, 17);
+    }
+
+    35% {
+        background-color: rgb(182, 181, 186);
+    }
+}
+
+@keyframes showhide {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+}
+
+@keyframes showchat {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    #assistant-chat {
+        width: auto;
+        left: 5%;
+        right: 5%;
+        font-size: 80%;
+    }
+}
+
+.hide {
+    display: none;
+    animation-name: showhide;
+    animation-duration: 0.5s;
+    transform: scale(1);
+    opacity: 1;
+}
+
+.show {
+    display: block;
+    animation-name: showhide;
+    animation-duration: 0.5s;
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+.hFENyl {
+    position: relative;
+    display: flex;
+}
+
+.ixsrax {
+    height: 5px;
+    width: 5px;
+    margin: 0px 2px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    top: 0px;
+    background-color: rgb(158, 157, 162);
+    animation-name: ZpjSY;
+}
+
+.dRvxoz {
+    height: 5px;
+    width: 5px;
+    margin: 0px 2px;
+    background-color: rgb(182, 181, 186);
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    top: 0px;
+    animation-name: hPhMsj;
+}
+
+.start-chat {
+    background-color: rgba(155, 155, 155, .5);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.assistant-chat-body {
+    padding: 20px;
+}
+
+.eJJEeC {
+    min-height: 40px;
+    text-align: center;
+    margin: 10px auto;
+}

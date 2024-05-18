@@ -20,6 +20,10 @@ importlib-resources = "*"
 psycopg2-binary = "*"
 faker = "*"
 geopy = "*"
+llama-index = "*"
+youtube-transcript-api = "*"
+google-api-python-client = "*"
+openai = "*"
 
 
 [requires]
