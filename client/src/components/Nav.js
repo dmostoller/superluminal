@@ -37,7 +37,8 @@ function Nav({onLogout}) {
                     <NavLink className="item"  to='/learn'>Video</NavLink>
                     <NavLink className="item" to='/events'>Events</NavLink>
                     <NavLink className="item" to='/about'>Bio</NavLink>
-                    <NavLink className="item" to='/forum'>Forum</NavLink>  
+                    <NavLink className="item" to='/forum'>Forum</NavLink>
+                    <Link className='item' to='https://kabayun.bandcamp.com/'>Shop</Link>  
                 </DropdownMenu>
             </Dropdown>
             </>
@@ -53,7 +54,7 @@ function Nav({onLogout}) {
             <NavLink className="item" to='/events'>Events</NavLink>
             <NavLink className="item" to='/about'>Bio</NavLink>
             <NavLink className="item" to='/forum'>Forum</NavLink>  
-
+            <Link className='item' to='https://kabayun.bandcamp.com/'>Shop</Link> 
         </>
         }
             <div className='right menu'>
