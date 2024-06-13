@@ -22,14 +22,14 @@ function ReleasesPage() {
         // console.log(deleted_track_id)
     }
 
-    const artistReleases = releases
-    .filter(release => {
-        return (
-            release.artist.toLowerCase().includes(selectedArtist.toLowerCase())        
-        )
-    })
+    // const artistReleases = releases
+    // .filter(release => {
+    //     return (
+    //         release.artist.toLowerCase().includes(selectedArtist.toLowerCase())        
+    //     )
+    // })
 
-    const sortedReleases = artistReleases.sort((a, b) => (a.date_released) > (b.date_released) ? -1 : 1)
+    const sortedReleases = releases.sort((a, b) => (a.date_released) > (b.date_released) ? -1 : 1)
 
     const [compact, setCompact] = useState(true);
         function changeTab(){
