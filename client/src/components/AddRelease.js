@@ -43,7 +43,7 @@ function AddRelease() {
           }).then((res) => {
             if(res.ok) {
               res.json().then(release => {
-                navigate(`/releases`)
+                navigate(`/releases/superluminal`)
               })
             } else {
                 res.json().then(error => setError(error.message))
