@@ -33,7 +33,17 @@ function Nav({onLogout}) {
             floating
             className='inverted fluid dropdown icon'>
                 <DropdownMenu>
-                    <NavLink className="item" to='/releases'>Music</NavLink>
+                    {/* <NavLink className="item" to='/releases'>Music</NavLink> */}
+                    <Dropdown item
+                        className='inverted dropdown'
+                        style={{padding: "1em"}}
+                        text='Music'
+                        >
+                        <DropdownMenu>
+                            <NavLink className="item" to='/releases/superluminal'>Superluminal</NavLink>
+                            <NavLink className="item" to='/releases/kabayun'>Kabayun</NavLink>
+                        </DropdownMenu>
+                    </Dropdown>
                     <NavLink className="item"  to='/learn'>Video</NavLink>
                     <NavLink className="item" to='/events'>Events</NavLink>
                     <NavLink className="item" to='/about'>Bio</NavLink>
@@ -49,7 +59,17 @@ function Nav({onLogout}) {
 
         {(deviceSize > 768) &&
         <>
-            <NavLink className="item" to='/releases'>Music</NavLink>
+            {/* <NavLink className="item" to='/releases'>Music</NavLink> */}
+            <Dropdown item
+                className='inverted dropdown'
+                style={{padding: "1em"}}
+                text='Music'
+                >
+                <DropdownMenu>
+                    <NavLink className="item" to='/releases/superluminal'>Superluminal</NavLink>
+                    <NavLink className="item" to='/releases/kabayun'>Kabayun</NavLink>
+                </DropdownMenu>
+            </Dropdown>
             <NavLink className="item"  to='/learn'>Video</NavLink>
             <NavLink className="item" to='/events'>Events</NavLink>
             <NavLink className="item" to='/about'>Bio</NavLink>

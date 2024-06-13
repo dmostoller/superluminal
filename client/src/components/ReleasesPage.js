@@ -1,13 +1,15 @@
 import React, {useEffect, useState} from "react";
-import {Link} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import { useUser } from "../context/user";
 import { useAdmin } from "../context/admin";
 import ReleasesList from "./ReleasesList";
 
 function ReleasesPage() {
-    const { user } = useUser()
-    const {isAdmin} = useAdmin()
-    const [releases, setReleases] = useState([])
+    const { user } = useUser();
+    const {isAdmin} = useAdmin();
+    const [releases, setReleases] = useState([]);
+    const {selectedArtist} = useParams();
+
 
     useEffect(() => {
         fetch(`/release`)
@@ -19,7 +21,15 @@ function ReleasesPage() {
         setReleases(releases => releases.filter((release) => release.id !== deleted_release_id))
         // console.log(deleted_track_id)
     }
-    const sortedReleases = releases.sort((a, b) => (a.date_released) > (b.date_released) ? -1 : 1)
+
+    const artistReleases = releases
+    .filter(release => {
+        return (
+            release.artist.toLowerCase().includes(selectedArtist.toLowerCase())        
+        )
+    })
+
+    const sortedReleases = artistReleases.sort((a, b) => (a.date_released) > (b.date_released) ? -1 : 1)
 
     const [compact, setCompact] = useState(true);
         function changeTab(){

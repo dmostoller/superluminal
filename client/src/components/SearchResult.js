@@ -7,7 +7,7 @@ export default function SearchResult({ title, image, artist, recordLabel, descri
     return (
         <>
 
-            <Link to={`/releases/${id}`}  style={{margin:"10px"}} className="ui centered card">
+            <Link to={`/release/${id}`}  style={{margin:"10px"}} className="ui centered card">
                 <div className="image">
                     <img alt={title} src={image}></img>
                 </div>

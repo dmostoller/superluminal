@@ -88,10 +88,10 @@ function App() {
           <Route path="/events/new" element={<AddEvent/>} />
           <Route path="/about" element={<AboutPage/>}/>
           <Route path="/contact" element={<ContactPage/>}/>
-          <Route path="/releases" element={<ReleasesPage/>}/>
+          <Route path="/releases/:selectedArtist" element={<ReleasesPage/>}/>
           <Route path="/releases/new" element={<AddRelease/>}/>
-          <Route path="/releases/:id/edit" element={<EditRelease/>}/>
-          <Route path="/releases/:id" element={<ReleaseDetail/>}/>
+          <Route path="/release/:id/edit" element={<EditRelease/>}/>
+          <Route path="/release/:id" element={<ReleaseDetail/>}/>
           <Route path="/user" element={<User/>}/>
           <Route path="/forum" element={<Forum/>}/>
           <Route path="/search_results/:searchParams" element={<SearchResults/>}/>

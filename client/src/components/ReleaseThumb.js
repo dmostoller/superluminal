@@ -5,7 +5,7 @@ export default function ReleaseThumb({id, title, artist, record_label, descripti
     return (
         <>
 
-            <Link to={`/releases/${id}`}  className="ui centered card">
+            <Link to={`/release/${id}`}  className="ui centered card">
                 <div className="image">
                     <img src={image}></img>
                 </div>
