@@ -12,7 +12,10 @@ function EditTrackForm({onEditTrack, id, onChangeIsFormVis}){
     useEffect(() => {
       fetch(`/tracks/${id}`)
       .then((res) => res.json())
-      .then((track) => setTrack(track))
+      .then((track) => {
+        setTrack(track)
+        setTrackUrl(track.audio)
+      })
   }, [id]);
 
     const formSchema = yup.object().shape({
@@ -57,7 +60,7 @@ function EditTrackForm({onEditTrack, id, onChangeIsFormVis}){
         <div className="item">
         <form className="ui inverted form tiny" style={{width: "350px"}} onSubmit={formik.handleSubmit}>  
             <div className="field">
-                <label>Add New Track  <a onClick={onChangeIsFormVis}>  Hide</a></label>
+                <label>Edit Track  <a onClick={onChangeIsFormVis}>  Hide</a></label>
                     <UploadTrackWidget onSetTrackUrl={setTrackUrl}/>
                     <input type="text" id="audio" name="audio" style={{visibility: "hidden"}} value={formik.values.audio} placeholder="Audio Link..." onChange={formik.handleChange}></input>
                     {formik.errors && <p style={{color:'red', textAlign:'center'}}>{formik.errors.audio}</p>}                    

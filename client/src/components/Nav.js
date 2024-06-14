@@ -40,20 +40,20 @@ function Nav({onLogout}) {
                         text='Music'
                         >
                         <DropdownMenu>
-                            <NavLink className="item" to='/releases/superluminal'>Superluminal</NavLink>
-                            <NavLink className="item" to='/releases/kabayun'>Kabayun</NavLink>
+                            <NavLink className="item" to='/music/superluminal'>Superluminal</NavLink>
+                            <NavLink className="item" to='/music/kabayun'>Kabayun</NavLink>
                         </DropdownMenu>
                     </Dropdown>
                     <NavLink className="item"  to='/learn'>Video</NavLink>
                     <NavLink className="item" to='/events'>Events</NavLink>
                     <NavLink className="item" to='/about'>Bio</NavLink>
                     <NavLink className="item" to='/forum'>Forum</NavLink>
-                    <Link className='item' to='https://kabayun.bandcamp.com/'>Shop</Link>  
+                    <a href='https://kabayun.bandcamp.com/' className='item' target='_blank'>Shop</a>  
                 </DropdownMenu>
             </Dropdown>
             </>
         }
-            <div className="item">
+            <div className="header item">
                 <Link to='/'><i className="galactic republic icon"></i>Superluminal</Link>
             </div>   
 
@@ -66,15 +66,15 @@ function Nav({onLogout}) {
                 text='Music'
                 >
                 <DropdownMenu>
-                    <NavLink className="item" to='/releases/superluminal'>Superluminal</NavLink>
-                    <NavLink className="item" to='/releases/kabayun'>Kabayun</NavLink>
+                    <NavLink className="item" to='/music/superluminal'>Superluminal</NavLink>
+                    <NavLink className="item" to='/music/kabayun'>Kabayun</NavLink>
                 </DropdownMenu>
             </Dropdown>
             <NavLink className="item"  to='/learn'>Video</NavLink>
             <NavLink className="item" to='/events'>Events</NavLink>
             <NavLink className="item" to='/about'>Bio</NavLink>
             <NavLink className="item" to='/forum'>Forum</NavLink>  
-            <Link className='item' to='https://kabayun.bandcamp.com/'>Shop</Link> 
+            <a href='https://kabayun.bandcamp.com/' className='item' target='_blank'>Shop</a>  
         </>
         }
             <div className='right menu'>

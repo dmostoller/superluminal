@@ -43,7 +43,7 @@ function AddRelease() {
           }).then((res) => {
             if(res.ok) {
               res.json().then(release => {
-                navigate(`/releases/superluminal`)
+                navigate(`/music/superluminal`)
               })
             } else {
                 res.json().then(error => setError(error.message))
@@ -61,7 +61,7 @@ function AddRelease() {
             <h4 class="ui horizontal inverted divider">Add New Release</h4>
                 
                 <div className="field">
-                    <label>Upload image, then enter release info... <Link style={{float:"right"}}to="/releases">  Back to Releases Page</Link></label>
+                    <label>Upload image, then enter release info... <Link style={{float:"right"}}to="/music/superluminal">  Back to Releases Page</Link></label>
                     {(image === "")?
                     <UploadWidget onSetImageUrl={setImage}/>
                     : (

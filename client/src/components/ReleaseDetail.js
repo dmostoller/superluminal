@@ -110,7 +110,7 @@ return (
                 <div className="center aligned grid" style={{padding: "10px"}}>
                 { user && isAdmin ? (
                         <>
-                            <Link to={`/release/${id}/edit`} className="circular ui icon secondary button">
+                            <Link to={`/releases/${id}/edit`} className="circular ui icon secondary button">
                                 <i className="edit icon" style={{visibility: "visible"}}></i>
                             </Link>
                             <button onClick={handleDeleteRelease} className="circular ui icon secondary button">
