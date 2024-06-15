@@ -37,7 +37,7 @@ function TrackList({ releaseId }) {
     }
 
     return (
-            <div className="ui one column inverted centered stackable fluid grid" style={{minWidth: "100%", margin: "5px"}}>
+            <div className="ui one column inverted centered stackable fluid grid" style={{minWidth: "650px", margin: "5px"}}>
                 <div className="ui inverted items">
                     {tracks_on_release}
                 {isAdmin &&     
