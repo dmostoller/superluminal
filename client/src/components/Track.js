@@ -37,16 +37,10 @@ export default function Track({id, onDeleteTrack}) {
             {isFormVis ? 
             <EditTrackForm id={id} onChangeIsFormVis={showEditForm} onEditTrack={updateTrack}/>
                 :
-            <table className="ui selectable inverted table" > 
+            <table className="ui selectable inverted fluid table" > 
             <tbody>
                 <tr>
-                    <th>
-                        {/* <iframe title="track_audio" style={{border: "0", width: "42px", height: "42px"}}
-                            src="{track.audio}" seamless>
-                        </iframe>     */}
- 
-                    </th>
-                    <th style={{padding: "5px", width: "500px"}}>
+                    <th style={{padding: "5px"}}>
                         <div className="content">
                             <h5>{track.title}
                             { isAdmin && 
@@ -68,8 +62,6 @@ export default function Track({id, onDeleteTrack}) {
                         <div className="content">
                             <Player track={track.audio}/>
                         </div>
-
-
                     </th>
                 </tr>
             </tbody>
