@@ -28,14 +28,17 @@ const Player = ({track}) => {
             <WavesurferPlayer
             height={40}
             waveColor="rgba(89, 4, 181, 1)"
-            barWidth="3"
+            barWidth={5}
+            barGap={4}
+            barHeight={1}
+            barRadius={30}
             progressColor= 'rgba(0, 0, 100, 0.5)'
             partialRender='true'
             url={track}
             onReady={onReady}
             onPlay={() => setIsPlaying(true)}
             onPause={() => setIsPlaying(false)}
-            // width={500}
+            // mediaControls='false'
         />
         </td>
         </tr>
