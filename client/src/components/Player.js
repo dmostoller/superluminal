@@ -1,13 +1,21 @@
 import React, {useState} from 'react'
 import WavesurferPlayer from '@wavesurfer/react'
+import {Loader, Dimmer, Segment} from 'semantic-ui-react'
 
 const Player = ({track}) => {
   const [wavesurfer, setWavesurfer] = useState(null)
   const [isPlaying, setIsPlaying] = useState(false)
+  const [loading, setLoading] = useState(false)
+
+  const onLoading = () => {
+    setLoading(true)
+  }
 
   const onReady = (ws) => {
+    setLoading(false)
     setWavesurfer(ws)
     setIsPlaying(false)
+    
   }
 
   const onPlayPause = () => {
@@ -19,10 +27,14 @@ const Player = ({track}) => {
     <>
     <table width="100%">
         <tr>
-        <td width="30px">
-            <button style={{float: "left"}} className='ui circular icon button secondary large' onClick={onPlayPause}>
-                { isPlaying ? <i className='pause icon'></i> : <i className='play icon'></i> }
-            </button>
+          <td width="30px">
+            {loading ?
+            <button className='ui circular icon loading button secondary massive' disabled></button>
+              :
+              <button style={{float: "left"}} className='ui circular icon button secondary large' onClick={onPlayPause}>
+                  { isPlaying ? <i className='pause icon'></i> : <i className='play icon'></i> }
+              </button>
+            }
         </td>
         <td>
             <WavesurferPlayer
@@ -35,11 +47,12 @@ const Player = ({track}) => {
             progressColor= 'rgba(0, 0, 100, 0.5)'
             partialRender='true'
             url={track}
+            onLoading={onLoading}
             onReady={onReady}
             onPlay={() => setIsPlaying(true)}
             onPause={() => setIsPlaying(false)}
             // mediaControls='false'
-        />
+            />
         </td>
         </tr>
     </table>
