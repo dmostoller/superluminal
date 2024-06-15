@@ -32,7 +32,7 @@ function EventsPage () {
         return Date.parse(event.event_date) >= Date.parse(currentDate)
     })
 
-    const sortedPastEvents = pastEvents.sort((a, b) => (a.event_date) < (b.event_date) ? -1 :1)
+    const sortedPastEvents = pastEvents.sort((a, b) => (a.event_date) > (b.event_date) ? -1 :1)
     const sortedUpcomingEvents = upcomingEvents.sort((a, b) => (a.event_date) < (b.event_date) ? -1 :1)
 
     const deleteEvent = (deleted_event) => setEvents(events => events.filter((event) => event.id !== deleted_event.id))
