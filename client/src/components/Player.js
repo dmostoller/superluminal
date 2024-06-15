@@ -1,21 +1,21 @@
 import React, {useState} from 'react'
 import WavesurferPlayer from '@wavesurfer/react'
-import {Loader, Dimmer, Segment} from 'semantic-ui-react'
+import {Progress} from 'semantic-ui-react'
 
 const Player = ({track}) => {
   const [wavesurfer, setWavesurfer] = useState(null)
   const [isPlaying, setIsPlaying] = useState(false)
   const [loading, setLoading] = useState(false)
+  const [percentLoaded, setPercentLoaded] = useState(0)
 
-  const onLoading = () => {
+  const onLoad = () => {
     setLoading(true)
   }
 
   const onReady = (ws) => {
-    setLoading((prevValue) => !prevValue)
+    setLoading((prevValue) => false)
     setWavesurfer(ws)
     setIsPlaying(false)
-    
   }
 
   const onPlayPause = () => {
@@ -47,7 +47,7 @@ const Player = ({track}) => {
             progressColor= 'rgba(0, 0, 100, 0.5)'
             partialRender='true'
             url={track}
-            onLoading={onLoading}
+            onLoad={onLoad}
             onReady={onReady}
             onPlay={() => setIsPlaying(true)}
             onPause={() => setIsPlaying(false)}
