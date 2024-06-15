@@ -35,6 +35,7 @@ const Player = ({track}) => {
             onReady={onReady}
             onPlay={() => setIsPlaying(true)}
             onPause={() => setIsPlaying(false)}
+            width={500}
         />
         </td>
         </tr>

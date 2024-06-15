@@ -40,7 +40,7 @@ export default function Track({id, onDeleteTrack}) {
             <table className="ui selectable inverted fluid table" > 
             <tbody>
                 <tr>
-                    <th style={{padding: "5px"}}>
+                    <th style={{padding: "5px", width: "600px"}}>
                         <div className="content">
                             <h5>{track.title}
                             { isAdmin && 
