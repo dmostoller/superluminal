@@ -30,6 +30,7 @@ const Player = ({track}) => {
             waveColor="rgba(89, 4, 181, 1)"
             // barWidth="2"
             progressColor= 'rgba(0, 0, 100, 0.5)'
+            partialRender='true'
             url={track}
             onReady={onReady}
             onPlay={() => setIsPlaying(true)}
