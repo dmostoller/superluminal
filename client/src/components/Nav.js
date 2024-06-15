@@ -33,7 +33,6 @@ function Nav({onLogout}) {
             floating
             className='inverted fluid dropdown icon'>
                 <DropdownMenu>
-                    {/* <NavLink className="item" to='/releases'>Music</NavLink> */}
                     <Dropdown item
                         className='inverted dropdown'
                         style={{padding: "1em"}}
@@ -59,7 +58,6 @@ function Nav({onLogout}) {
 
         {(deviceSize > 768) &&
         <>
-            {/* <NavLink className="item" to='/releases'>Music</NavLink> */}
             <Dropdown item
                 className='inverted dropdown'
                 style={{padding: "1em"}}
