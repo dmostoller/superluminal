@@ -20,7 +20,7 @@ const Player = ({track}) => {
     <table width="100%">
         <tr>
         <td width="30px">
-            <button style={{float: "left"}} className='ui circular icon button secondary small' onClick={onPlayPause}>
+            <button style={{float: "left"}} className='ui circular icon button secondary' onClick={onPlayPause}>
                 { isPlaying ? <i className='pause icon'></i> : <i className='play icon'></i> }
             </button>
         </td>
@@ -35,7 +35,7 @@ const Player = ({track}) => {
             onReady={onReady}
             onPlay={() => setIsPlaying(true)}
             onPause={() => setIsPlaying(false)}
-            width={500}
+            // width={500}
         />
         </td>
         </tr>
