@@ -23,7 +23,7 @@ return (
             <div className="description">
                 <p>	Superluminal is the project of Kabayun and his partner, muse, and wife Yasmin. Those who know them together are aware of how much of a symbiosis they are in various ways. She doing art to his music and vice versa - constantly inspiring each other. Now they have taken the next level by making music together!             
                 <br></br>Superluminal is the next logical step and the result of both their energies and their love for each other as well as for psychedelic culture. With pumping basslines and twisted soundscapes, it’s the perfect sound to kick up some dust and shake your chakras!</p>
-                <p>Superluminal & Kabayun are signed exclusively to <a href="https://www.sangomarecords.com/" target="_blank">Sangoma Records</a> and are managed by <a href="http://fm-booking.com/" target="_blank">FM Booking.</a></p>
+                <p>Superluminal & Kabayun are signed exclusively to Sangoma Records and are managed by FM Booking.</p>
             </div>
             <div className="ui fluid container">
                 <div className="ui three column grid">
