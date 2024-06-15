@@ -28,7 +28,7 @@ const Player = ({track}) => {
             <WavesurferPlayer
             height={30}
             waveColor="rgba(89, 4, 181, 1)"
-            // barWidth="2"
+            barWidth="2"
             progressColor= 'rgba(0, 0, 100, 0.5)'
             partialRender='true'
             url={track}
@@ -39,9 +39,6 @@ const Player = ({track}) => {
         </td>
         </tr>
     </table>
-      
-
-
     </>
   )
 }

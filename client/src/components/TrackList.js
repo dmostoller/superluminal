@@ -20,11 +20,8 @@ function TrackList({ releaseId }) {
 
     const deleteTrack = (deleted_track_id) => {
         setTracks(tracks => tracks.filter((track) => track.id !== deleted_track_id))
-        // console.log(deleted_track_id)
     }
-    // function reloadTrack (tracks) {
-    //     setTracks(tracks)
-    // }
+
 
     const tracks_on_release = tracks.map((track) => {
             return <Track
@@ -40,16 +37,13 @@ function TrackList({ releaseId }) {
     }
 
     return (
-            <div className="ui one column inverted centered stackable grid" style={{margin: "5px"}}>
+            <div className="ui one column inverted centered stackable fluid grid" style={{minWidth: "100%", margin: "5px"}}>
                 <div className="ui inverted items">
                     {tracks_on_release}
-                {isAdmin ?     
-                <div className="center aligned grid" style={{padding: "5px"}}>
-                    
-                    {isFormVis ? <AddTrackForm onAddTrack={addTrack} releaseId={releaseId} onChangeIsFormVis={changeIsFormVis} /> : <button onClick={changeIsFormVis} className="ui circular icon secondary button tiny"><i class="plus icon"></i></button>}
-                </div>
-                :
-                    <></>
+                {isAdmin &&     
+                    <div className="center aligned grid" style={{padding: "5px"}}>
+                        {isFormVis ? <AddTrackForm onAddTrack={addTrack} releaseId={releaseId} onChangeIsFormVis={changeIsFormVis} /> : <button onClick={changeIsFormVis} className="ui circular icon secondary button tiny"><i class="plus icon"></i></button>}
+                    </div>
                 }
                 </div>
             </div>
