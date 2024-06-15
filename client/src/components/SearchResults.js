@@ -11,18 +11,19 @@ function SearchResults() {
     const [posts, setPosts] = useState([]);
     const [events, setEvents] = useState([]);
 
-
     useEffect(() => {
         fetch(`/release`)
         .then((res) => res.json())
         .then((releases) => {setReleases(releases)})
       }, []);
 
-
     const searchResults = releases
     .filter(release => {
         return (
-            release.title.toLowerCase().includes(searchParams.toLowerCase())        
+            release.title.toLowerCase().includes(searchParams.toLowerCase())
+            || release.record_label.toLowerCase().includes(searchParams.toLowerCase()) 
+            || release.artist.toLowerCase().includes(searchParams.toLowerCase()) 
+            || release.description.toLowerCase().includes(searchParams.toLowerCase())        
         )
     })
 
@@ -49,7 +50,8 @@ function SearchResults() {
     const postResults = posts
     .filter(post => {
         return (
-            post.title.toLowerCase().includes(searchParams.toLowerCase())        
+            post.title.toLowerCase().includes(searchParams.toLowerCase()) 
+            || post.content.toLowerCase().includes(searchParams.toLowerCase())         
         )
     })
 
@@ -74,7 +76,10 @@ function SearchResults() {
     const eventResults = events
     .filter(event => {
         return (
-            event.name.toLowerCase().includes(searchParams.toLowerCase())        
+            event.name.toLowerCase().includes(searchParams.toLowerCase())
+            || event.location.toLowerCase().includes(searchParams.toLowerCase()) 
+            || event.venue.toLowerCase().includes(searchParams.toLowerCase()) 
+            || event.details.toLowerCase().includes(searchParams.toLowerCase())        
         )
     })
 
@@ -109,13 +114,11 @@ function SearchResults() {
                     <></>
                 :
                 postResultsList
-                
                 }
                 { (eventResults.length === 0) ?
                     <></>
                 :
                 eventResultsList
-                
                 }
                 </div> 
             </div>
