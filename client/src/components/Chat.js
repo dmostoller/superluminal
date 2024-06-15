@@ -34,7 +34,7 @@ function Chat() {
   const [chatMessages, setchatMessages] = useState([
     {
       position: "left_bubble",
-      message: "Hello there, my name is TutorBot. I'm here to help you understand Kabayun's production tutorials. Do you have any questions for me? Remember, I'm not a real person so please make your questions as detailed as possible.",
+      message: "Hello there, my name is TutorBot. I'm here to help you understand Kabayun's production tutorials. Do you have any questions for me?",
     },
   ]);
 
