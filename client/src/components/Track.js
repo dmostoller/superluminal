@@ -2,6 +2,9 @@ import React, {useState, useEffect} from "react"
 import EditTrackForm from "./EditTrackForm";
 import { useAdmin } from "../context/admin";
 import Player from "./Player";
+import fileDownload from "js-file-download"
+import axios from "axios";
+
 
 export default function Track({id, onDeleteTrack}) {
     const [isFormVis, setIsFormVis] = useState(false);
@@ -31,26 +34,39 @@ export default function Track({id, onDeleteTrack}) {
         showEditForm()
         setTrack(editedTrack)
     }
+    const handleDownload = (url, filename) => {
+        axios
+          .get(url, {
+            responseType: "blob"
+          })
+          .then((res) => {
+            fileDownload(res.data, filename);
+          });
+      };
 
     return (
         <div className="item">
             {isFormVis ? 
             <EditTrackForm id={id} onChangeIsFormVis={showEditForm} onEditTrack={updateTrack}/>
                 :
-            <table className="ui selectable inverted table" > 
+            <table className="ui selectable inverted fluid table" > 
             <tbody>
                 <tr>
-                    <th>
-                        {/* <iframe title="track_audio" style={{border: "0", width: "42px", height: "42px"}}
-                            src="{track.audio}" seamless>
-                        </iframe>     */}
- 
-                    </th>
-                    <th style={{padding: "5px", width: "500px"}}>
+                    <th style={{padding: "5px", minWidth: "300px", width: "600px"}}>
                         <div className="content">
                             <h5>{track.title}
                             { isAdmin && 
                                 <span style={{float: "right"}}>
+                                    <button 
+                                        className="circular ui icon inverted secondary button mini"
+                                        onClick={() => {
+                                            handleDownload(
+                                                `${track.audio}`,
+                                                `${track.artist_names} - ${track.title}.mp3`
+                                              );
+                                        }}>
+                                        <i className="cloud download alternate icon"></i>
+                                    </button>
                                     <button onClick={showEditForm} className="circular ui icon inverted secondary button mini">
                                         <i className="edit icon" style={{visibility: "visible"}}></i>
                                     </button>
@@ -68,8 +84,6 @@ export default function Track({id, onDeleteTrack}) {
                         <div className="content">
                             <Player track={track.audio}/>
                         </div>
-
-
                     </th>
                 </tr>
             </tbody>

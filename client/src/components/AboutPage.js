@@ -23,10 +23,10 @@ return (
             <div className="description">
                 <p>	Superluminal is the project of Kabayun and his partner, muse, and wife Yasmin. Those who know them together are aware of how much of a symbiosis they are in various ways. She doing art to his music and vice versa - constantly inspiring each other. Now they have taken the next level by making music together!             
                 <br></br>Superluminal is the next logical step and the result of both their energies and their love for each other as well as for psychedelic culture. With pumping basslines and twisted soundscapes, it’s the perfect sound to kick up some dust and shake your chakras!</p>
-                <p>Superluminal & Kabayun are signed exclusively to <a href="https://www.sangomarecords.com/" target="_blank">Sangoma Records</a> and are managed by <a href="http://fm-booking.com/" target="_blank">FM Booking.</a></p>
+                <p>Superluminal & Kabayun are signed exclusively to Sangoma Records and are managed by FM Booking.</p>
             </div>
             <div className="ui fluid container">
-                <div className="ui three column grid">
+                <div className="ui stackable three column centered grid">
                     <div className="column">
                         <div className="ui center aligned inverted segment">
                             <a href="http://fm-booking.com/" target="_blank">
@@ -34,24 +34,24 @@ return (
                             </a>
                         </div>
                     </div>
-                    <div className="ui column">
-                        <div className="ui centered grid" style={{paddingTop: "8px"}}>
-                            <Link to="https://www.facebook.com/superluminalpsy" target="blank"  className="ui circular facebook icon large button" style={{marginTop: "25px", marginRight: "5px"}}>
+                    <div className="column">
+                        <div className="ui centered grid" style={{marginTop: "20px"}}>
+                            <Link to="https://www.facebook.com/superluminalpsy" target="blank"  className="ui circular facebook icon large button" style={{marginRight: "5px"}}>
                                 <i className="facebook icon"></i>
                             </Link>
-                            <Link to="https://www.youtube.com/channel/UCGePscP8I_b2ta5Vuj1j-bQ" target="blank"  className="ui circular youtube icon large button" style={{marginTop: "25px", marginRight: "5px"}}>
+                            <Link to="https://www.youtube.com/channel/UCGePscP8I_b2ta5Vuj1j-bQ" target="blank"  className="ui circular youtube icon large button" style={{marginRight: "5px"}}>
                                 <i className="youtube icon"></i>
                             </Link>
-                            <Link to="https://www.instagram.com/superluminal_psy" target="blank"  className="ui circular icon purple large button" style={{marginTop: "25px", marginRight: "5px"}}>
+                            <Link to="https://www.instagram.com/superluminal_psy" target="blank"  className="ui circular icon purple large button" style={{marginRight: "5px"}}>
                                 <i className="instagram icon"></i>
                             </Link>
-                            <Link to="https://www.patreon.com/superluminal_kabayun_yasmin" target="blank"  className="ui circular icon grey large button" style={{marginTop: "25px", marginRight: "5px"}}>
+                            <Link to="https://www.patreon.com/superluminal_kabayun_yasmin" target="blank"  className="ui circular icon grey large button" style={{ marginRight: "5px"}}>
                                 <i className="patreon icon"></i>
                             </Link>
-                            <Link to="https://soundcloud.com/superluminal-sangoma" target="blank"  className="ui circular icon button large orange" style={{marginTop: "25px", marginRight: "5px"}}>
+                            <Link to="https://soundcloud.com/superluminal-sangoma" target="blank"  className="ui circular icon button large orange" style={{marginRight: "5px"}}>
                                 <i className="soundcloud icon"></i>
                             </Link>
-                            <Link to="https://open.spotify.com/artist/7IHjVGAMreozL1Jk2BBj6h" target="blank" className="ui circular icon button large green" style={{marginTop: "25px", marginRight: "5px"}}>
+                            <Link to="https://open.spotify.com/artist/7IHjVGAMreozL1Jk2BBj6h" target="blank" className="ui circular icon button large green" style={{marginRight: "5px"}}>
                                 <i className="spotify icon"></i>
                             </Link>
                         </div>

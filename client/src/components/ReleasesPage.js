@@ -38,7 +38,7 @@ function ReleasesPage() {
 
 
     return (
-        <div className="ui container" style={{backgroundColor: "#303030", marginTop:"40px"}} >
+        <div className="ui container" style={{backgroundColor: "#303030", marginTop:"40px", minHeight: "100vh"}} >
 
             <div className="ui inverted centered secondary pointing menu" style={{marginTop: "10px"}}>
                 { compact ?
