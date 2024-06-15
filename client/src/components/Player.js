@@ -12,7 +12,7 @@ const Player = ({track}) => {
   }
 
   const onReady = (ws) => {
-    setLoading(false)
+    setLoading((prevValue) => !prevValue)
     setWavesurfer(ws)
     setIsPlaying(false)
     
