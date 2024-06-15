@@ -14,7 +14,7 @@ const Player = ({track}) => {
     wavesurfer && wavesurfer.playPause()
   }
 
-  console.log(track)
+//   console.log(track)
   return (
     <>
     <table width="100%">
