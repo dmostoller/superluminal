@@ -2,6 +2,9 @@ import React, {useState, useEffect} from "react"
 import EditTrackForm from "./EditTrackForm";
 import { useAdmin } from "../context/admin";
 import Player from "./Player";
+import fileDownload from "js-file-download"
+import axios from "axios";
+
 
 export default function Track({id, onDeleteTrack}) {
     const [isFormVis, setIsFormVis] = useState(false);
@@ -31,6 +34,15 @@ export default function Track({id, onDeleteTrack}) {
         showEditForm()
         setTrack(editedTrack)
     }
+    const handleDownload = (url, filename) => {
+        axios
+          .get(url, {
+            responseType: "blob"
+          })
+          .then((res) => {
+            fileDownload(res.data, filename);
+          });
+      };
 
     return (
         <div className="item">
@@ -45,6 +57,16 @@ export default function Track({id, onDeleteTrack}) {
                             <h5>{track.title}
                             { isAdmin && 
                                 <span style={{float: "right"}}>
+                                    <button 
+                                        className="circular ui icon inverted secondary button mini"
+                                        onClick={() => {
+                                            handleDownload(
+                                                `${track.audio}`,
+                                                `${track.artist_names} - ${track.title}.mp3`
+                                              );
+                                        }}>
+                                        <i className="cloud download alternate icon"></i>
+                                    </button>
                                     <button onClick={showEditForm} className="circular ui icon inverted secondary button mini">
                                         <i className="edit icon" style={{visibility: "visible"}}></i>
                                     </button>
