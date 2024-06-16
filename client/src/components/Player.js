@@ -6,7 +6,6 @@ const Player = ({track}) => {
   const [wavesurfer, setWavesurfer] = useState(null)
   const [isPlaying, setIsPlaying] = useState(false)
   const [loading, setLoading] = useState(false)
-  const [percentLoaded, setPercentLoaded] = useState(0)
 
   const onLoad = () => {
     setLoading(true)
