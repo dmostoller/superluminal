@@ -49,6 +49,9 @@ function PostDetail(){
                         <div className="description">
                             <p>{post.content}</p>
                         </div>
+                        <div className="meta">
+                            <span className="category"><a href={post.link} target="_blank">{post.link}</a></span>
+                        </div>
                         <div style={{padding: "10px"}}>
                             <HelmetMetaData 
                             title={post.title}
@@ -64,7 +67,6 @@ function PostDetail(){
                             data-position="bottom center">
                             <i class="facebook icon"></i>
                             </Link>
-                  
                             { user && isAdmin ? ( 
                             <>
                                 <Link to={`/posts/${id}/edit`} className="circular ui icon secondary button">

@@ -23,7 +23,7 @@ function AddPost() {
           title:'',
           content:'',
           image_url:`${imageLink}`,
-
+          link:'',
         },
         validationSchema: formSchema,
         onSubmit: (values) => {
@@ -71,6 +71,11 @@ function AddPost() {
                 <div className="field">
                     <textarea type="text" rows="6" name="content" value={formik.values.content} placeholder="Post content..." onChange={formik.handleChange}></textarea>               
                     {formik.errors && <p style={{color:'red', textAlign:'center'}}>{formik.errors.content}</p>}
+                </div>
+                <div className="field">
+                    <label className="inverted">Link </label>
+                    <input type="text" name="link" value={formik.values.link} placeholder="Link..." onChange={formik.handleChange}></input>
+                    {formik.errors && <p style={{color:'red', textAlign:'center'}}>{formik.errors.link}</p>}
                 </div>
                 <div className="field">
                 <button className="ui button fluid violet" type="submit">Submit</button>

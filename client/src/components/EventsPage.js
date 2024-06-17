@@ -20,7 +20,7 @@ function EventsPage () {
     const month = date.getMonth() + 1;
     const year = date.getFullYear();
     const currentDate = `${year}-${month}-${day}`
-    console.log(currentDate)
+    // console.log(currentDate)
 
     const pastEvents = events
     .filter(event => {
@@ -44,7 +44,7 @@ function EventsPage () {
                     <h4  style={{marginTop: "30px"}} class="ui horizontal inverted divider">Upcoming Events</h4>
                     <EventsList events={sortedUpcomingEvents} isAdmin={isAdmin} deleteEvent={deleteEvent}/>
                 </div>
-                <div className="ui container">    
+                <div className="ui container" style={{marginBottom: "30px"}}>    
                     <h4  style={{marginTop: "30px"}} class="ui horizontal inverted divider">Past Events</h4>
                     <EventsList events={sortedPastEvents} isAdmin={isAdmin} deleteEvent={deleteEvent}/>
                 </div>

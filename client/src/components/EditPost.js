@@ -34,6 +34,7 @@ function EditPost() {
           title:`${post.title}`,
           content:`${post.content}`,
           image_url:`${imageLink}`,
+          link: `${post.link}`,
         },
         validationSchema: formSchema,
         onSubmit: (values) => {
@@ -78,6 +79,11 @@ function EditPost() {
                   <label className="inverted">Content</label>
                     <textarea type="text" rows="6" name="content" value={formik.values.content} placeholder="Post content..." onChange={formik.handleChange}></textarea>               
                     {formik.errors && <p style={{color:'red', textAlign:'center'}}>{formik.errors.content}</p>}
+                </div>
+                <div className="field">
+                    <label className="inverted">Link </label>
+                    <input type="text" name="link" value={formik.values.link} placeholder="Link..." onChange={formik.handleChange}></input>
+                    {formik.errors && <p style={{color:'red', textAlign:'center'}}>{formik.errors.link}</p>}
                 </div>
                 <div className="field">
                   <button className="ui button violet fluid" type="submit">Submit</button>

@@ -165,6 +165,7 @@ class Posts(Resource):
                 title=form_json['title'],
                 content=form_json['content'],
                 image_url=form_json['image_url'],
+                link=form_json['link'],
                 date_added=date,
             )
             db.session.add(new_post)
@@ -191,6 +192,8 @@ class PostsById(Resource):
             setattr(post, 'title', request.get_json()['title'])
             setattr(post, 'content', request.get_json()['content'])
             setattr(post, 'image_url', request.get_json()['image_url'])
+            setattr(post, 'link', request.get_json()['link'])
+
             db.session.commit()
             response = make_response(post.to_dict(), 200)
         except ValueError:

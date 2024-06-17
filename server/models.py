@@ -61,6 +61,7 @@ class Post(db.Model, SerializerMixin):
     content = db.Column(db.String)
     image_url = db.Column(db.String)
     date_added = db.Column(db.String)
+    link = db.Column(db.String)
 
     post_comments = db.relationship('PostComment', back_populates='post', cascade='all, delete')
     

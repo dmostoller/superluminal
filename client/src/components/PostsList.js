@@ -25,6 +25,7 @@ function PostsList () {
         content={post.content}
         image_url={post.image_url}
         date_added={post.date_added}
+        link={post.link}
         isAdmin='true'
         />
     })
