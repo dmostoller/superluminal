@@ -17,9 +17,6 @@ function ReleasesPage() {
         .then((releases) => {setReleases(releases)})
       }, []);
       
-    // const deleteRelease = (deleted_release_id) => {
-    //     setReleases(releases => releases.filter((release) => release.id !== deleted_release_id))
-    // }
 
     const artistReleases = releases
     .filter(release => {
@@ -30,29 +27,8 @@ function ReleasesPage() {
 
     const sortedReleases = artistReleases.sort((a, b) => (a.date_released) > (b.date_released) ? -1 : 1)
 
-    // const [compact, setCompact] = useState(true);
-    //     function changeTab(){
-    //         setCompact(!compact)
-    //     }
-
-
     return (
         <div className="ui container" style={{backgroundColor: "#303030", marginTop:"40px", minHeight: "100vh"}} >
-
-            {/* <div className="ui inverted centered secondary pointing menu" style={{marginTop: "10px"}}>
-                { compact ?
-                <a onClick={changeTab} className="active item">Collapsed View</a>
-                :
-                <a onClick={changeTab} className="item">Collapsed View</a>
-                }
-                
-                
-                { !compact ? 
-                <a onClick={changeTab} className="active item">Expanded View</a>
-                :
-                <a onClick={changeTab} className="item">Expanded View</a>
-                }
-            </div> */}
             {selectedArtist === "superluminal" &&
             <h4  style={{paddingTop: "30px"}} class="ui horizontal inverted divider">Superluminal</h4>
             }
@@ -62,15 +38,11 @@ function ReleasesPage() {
             <div className="ui container" style={{paddingTop: "5px"}}>
                 <ReleasesList releases={sortedReleases} />
             </div>
-            { user && isAdmin ?
+            { user && isAdmin &&
             <div className="ui grid container centered">
             <Link to={`/releases/new`} style={{margin: "25px"}} className="ui circular icon secondary button"><i className="plus icon"></i></Link>
             </div>
-            : <></>
             }
-
-
-
         </div>
     )
 }
