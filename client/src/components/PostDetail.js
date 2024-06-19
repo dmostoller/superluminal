@@ -65,7 +65,7 @@ function PostDetail(){
                             data-inverted="" 
                             data-tooltip="Share to Facebook" 
                             data-position="bottom center">
-                            <i class="facebook icon"></i>
+                            <i className="facebook icon"></i>
                             </Link>
                             { user && isAdmin ? ( 
                             <>

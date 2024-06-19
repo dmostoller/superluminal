@@ -110,7 +110,6 @@ function Forum() {
                             data-position="right center" >
                                 <i className='plus icon'></i>
                             </button>
-                            {/* <span className="ui grey text medium">  add new channel</span> */}
                             </>
                             }
                         </div>
@@ -120,16 +119,13 @@ function Forum() {
                         <ForumSearch searchVal={searchVal} onSearch={setSearchVal}/>
                         <Map users={users} />
                         </div>
-
                     </div>
                 <div className="ten wide right attached column"  style={{marginTop: "100px"}}>
                     <ThreadMessageList threadId={selectedThread} searchVal={searchVal} mobile={false}/>                                   
                 </div>
             </div>
-
         }
-        </>
-             
+        </>         
     )
 }
 

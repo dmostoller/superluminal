@@ -49,11 +49,10 @@ function EventsPage () {
                     <EventsList events={sortedPastEvents} isAdmin={isAdmin} deleteEvent={deleteEvent}/>
                 </div>
             </div>
-            { user && isAdmin ?
+            { user && isAdmin &&
             <div className="ui grid container centered">
             <Link to={`/events/new`} style={{marginTop: "15px", marginBottom: "15px"}} className="ui circular icon secondary button"><i className="plus icon"></i></Link>
             </div>
-            : <></>
             }
         </div>
     )

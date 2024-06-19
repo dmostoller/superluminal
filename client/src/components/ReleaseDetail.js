@@ -16,7 +16,6 @@ export default function ReleaseDetail() {
     const [release, setRelease] = useState({});
     const navigate = useNavigate();
     const [savedAvatars, setSavedAvatars] = useState([]);
-    // const [savedItems, setSavedItems] = useState([]);
 
     function changeIsSaved() {
         setIsSaved(!isSaved)
@@ -87,12 +86,11 @@ export default function ReleaseDetail() {
         }
         }
 
-        const linkForFB = `https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsuperluminal.onrender.com%2Freleases%2F${id}&amp;src=sdkpreparse class=fb-xfbml-parse-ignore` 
+    const linkForFB = `https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsuperluminal.onrender.com%2Freleases%2F${id}&amp;src=sdkpreparse class=fb-xfbml-parse-ignore` 
 
 return (
 <div className="ui container" style={{paddingTop:"5px", marginTop: "20px"}}>
-<div className="ui middle aligned center aligned grid" style={{paddingTop:"5px", marginTop: "20px", minHeight:"100vh"}}>
-
+    <div className="ui middle aligned center aligned grid" style={{paddingTop:"5px", marginTop: "20px", minHeight:"100vh"}}>
         <div style={{margin: "10px"}} className="ui inverted attached horizontal card fluid">
             <div className="item">
                 <img className="ui large image" src={release.image} alt={release.title}></img>
@@ -108,7 +106,7 @@ return (
                 <p> {release.date_released}</p>
                 </div>
                 <div className="center aligned grid" style={{padding: "10px"}}>
-                { user && isAdmin ? (
+                { user && isAdmin && (
                         <>
                             <Link to={`/releases/${id}/edit`} className="circular ui icon secondary button">
                                 <i className="edit icon" style={{visibility: "visible"}}></i>
@@ -118,7 +116,6 @@ return (
                             </button>
                         </>
                         )
-                        : <></>
                         }
                         <div className="center aligned grid" style={{padding: "10px"}}>
                         <div className="meta"><span class="ui small inverted grey text">Saved by</span></div>
@@ -156,7 +153,6 @@ return (
                         </button>  
                         :<></>
                         }   
-                 
                     <Link to={`${release.buy_link}`} 
                     target="_blank" 
                     style={{marginRight: "5px"}} 
@@ -165,14 +161,13 @@ return (
                     data-tooltip="Buy on Bandcamp" 
                     data-position="bottom center">
                         <i className="cart icon"></i>  Buy
-                    </Link>
-    
+                    </Link>    
                 </div>
             </div>
             <div className="ui bottom attached inverted segment">
             <h4 className="ui horizontal inverted divider">Comments</h4>
             <div><CommentsList releaseId={release.id}/></div> 
-            { !user ?
+            { !user &&
             <div className="ui centered grid" style={{padding: "5px"}}>
                 <div className="ui inverted message">
                 <span className="ui medium violet text">
@@ -180,14 +175,10 @@ return (
                 </span>
                 </div>
             </div>
-            :
-            <></>
             }
-
             </div>
         </div>
     </div>
-    </div>
-
+</div>
 );
 }
