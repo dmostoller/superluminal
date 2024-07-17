@@ -4,3 +4,9 @@
   --link: #61dafb;
   --text: hsla(0, 0%, 100%, 0.88);
 }
+
+.header_comtainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+}

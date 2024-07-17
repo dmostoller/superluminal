@@ -39,9 +39,10 @@ const Player = ({track}) => {
         <td>
             <WavesurferPlayer
             height={40}
-            waveColor="rgba(89, 4, 181, 1)"
-            barWidth={5}
-            barGap={4}
+            waveColor="rgba(127, 0, 255, 1)"
+            // waveColor="rgba(89, 4, 181, 1)"
+            barWidth={2}
+            barGap={1}
             barHeight={1}
             barRadius={30}
             progressColor= 'rgba(0, 0, 100, 0.5)'
