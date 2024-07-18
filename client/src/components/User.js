@@ -15,6 +15,10 @@ export default function User () {
     }
     
     useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
+    useEffect(() => {
         if (!user.id) {
             navigate('/')
         }

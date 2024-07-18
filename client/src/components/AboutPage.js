@@ -1,10 +1,12 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link } from "react-router-dom";
 import SangomaLogo from "./assets/Sangoma_Logo_2018_Horizontal_Black.png"
 import FMLogo from "./assets/FM Booking-white-black.png"
 
 export default function AboutPage () {
-
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
 return (
     <div className="ui middle aligned center aligned grid" style={{minHeight:"100vh", marginTop: "40px"}}>
     <div style={{width: "90%", margin: "auto", marginTop:"20px", marginBottom:"20px"}} className="ui centered inverted card">

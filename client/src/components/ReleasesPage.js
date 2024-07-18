@@ -10,6 +10,9 @@ function ReleasesPage() {
     const [releases, setReleases] = useState([]);
     const {selectedArtist} = useParams();
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
 
     useEffect(() => {
         fetch(`/release`)

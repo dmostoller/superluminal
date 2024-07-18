@@ -12,6 +12,10 @@ function SearchResults() {
     const [events, setEvents] = useState([]);
 
     useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
+    useEffect(() => {
         fetch(`/release`)
         .then((res) => res.json())
         .then((releases) => {setReleases(releases)})

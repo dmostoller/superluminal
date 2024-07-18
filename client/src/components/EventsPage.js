@@ -10,6 +10,10 @@ function EventsPage () {
     const {isAdmin} = useAdmin()
 
     useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
+    useEffect(() => {
       fetch(`/event`)
       .then((res) => res.json())
       .then((events) => {setEvents(events)})

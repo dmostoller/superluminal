@@ -1,11 +1,15 @@
 
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Tutorials from "./Tutorials";
 import GigVideos from "./GigVideos";
 import Chat from "./Chat"
 
 
 function Learn() {
+    
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
 
     const [tutVis, setTutVis] = useState(true);
 // console.log('data', data)
