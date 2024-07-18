@@ -1,8 +1,6 @@
 import { YouTubePlaylist } from "@codesweetly/react-youtube-playlist";
 
-
 export default function Tutorials() {
-
 return (<>
     <div className="column">
         <YouTubePlaylist

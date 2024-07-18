@@ -4,7 +4,6 @@ import Tutorials from "./Tutorials";
 import GigVideos from "./GigVideos";
 import Chat from "./Chat"
 
-
 function Learn() {
     
     useEffect(() => {
