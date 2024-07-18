@@ -355,7 +355,9 @@ class Tracks(Resource):
                 artist_names=form_json['artist_names'],
                 bpm=form_json['bpm'],
                 audio=form_json['audio'],
+                dropbox_url=form_json['dropbox_url'],
                 release_id=form_json['release_id'],
+
             )
             db.session.add(new_track)
             db.session.commit()
@@ -382,6 +384,7 @@ class TracksById(Resource):
             setattr(track, 'title', request.get_json()['title'])
             setattr(track, 'bpm', request.get_json()['bpm'])
             setattr(track, 'audio', request.get_json()['audio'])
+            setattr(track, 'dropbox_url', request.get_json()['dropbox_url'])
             setattr(track, 'artist_names', request.get_json()['artist_names'])
             db.session.commit()
             response = make_response(track.to_dict(), 200)

@@ -41,8 +41,14 @@ function TrackList({ releaseId }) {
                 <div className="ui inverted items">
                     {tracks_on_release}
                 {isAdmin &&     
-                    <div className="center aligned grid" style={{padding: "5px"}}>
-                        {isFormVis ? <AddTrackForm onAddTrack={addTrack} releaseId={releaseId} onChangeIsFormVis={changeIsFormVis} /> : <button onClick={changeIsFormVis} className="ui circular icon secondary button tiny"><i class="plus icon"></i></button>}
+                    <div className="ui centered grid" style={{padding: "5px"}}>
+                        {isFormVis ? 
+                        <AddTrackForm onAddTrack={addTrack} releaseId={releaseId} onChangeIsFormVis={changeIsFormVis} /> 
+                        : 
+                        <button onClick={changeIsFormVis} className="ui circular icon secondary button tiny">
+                            <i class="plus icon"></i>
+                        </button>
+                        }
                     </div>
                 }
                 </div>

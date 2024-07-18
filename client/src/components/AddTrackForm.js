@@ -8,10 +8,11 @@ function AddTrackForm({onAddTrack, releaseId, onChangeIsFormVis}){
     const [trackUrl, setTrackUrl] = useState("");
 
     const formSchema = yup.object().shape({
-        title: yup.string().required("Must enter a track title"),
-        artist_names: yup.string().required("Must enter artist names"),
-        bpm: yup.string().required("Must enter a bpm"),
-        audio: yup.string().required("Must enter an audio link"),
+        title: yup.string().required("track title is required"),
+        artist_names: yup.string().required("artist names are required"),
+        bpm: yup.string().required("bpm is required"),
+        audio: yup.string().required("audio link is required"),
+        dropbox_url: yup.string().required("dropbox link is required"),
       })
 
     const formik = useFormik({
@@ -21,6 +22,7 @@ function AddTrackForm({onAddTrack, releaseId, onChangeIsFormVis}){
           artist_names:'',
           bpm: '',
           audio:`${trackUrl}`,
+          dropbox_url: '',
           release_id: parseInt(releaseId),
         },
         validationSchema: formSchema,
@@ -67,6 +69,10 @@ function AddTrackForm({onAddTrack, releaseId, onChangeIsFormVis}){
             <div className="field">
                 <input type="text" id="bpm" name="bpm" value={formik.values.bpm} placeholder="Track BPM..." onChange={formik.handleChange}></input>
                 {formik.errors && <p style={{color:'red', textAlign:'center'}}>{formik.errors.bpm}</p>}
+            </div>
+            <div className="field">
+                <input type="text" id="dropbox_url" name="dropbox_url" value={formik.values.dropbox_url} placeholder="Dropbox WAV link..." onChange={formik.handleChange}></input>
+                {formik.errors && <p style={{color:'red', textAlign:'center'}}>{formik.errors.dropbox_url}</p>}
             </div>
             <button className="ui button fluid violet tiny" type="submit">Submit</button>
         </form>

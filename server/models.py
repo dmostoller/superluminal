@@ -16,6 +16,7 @@ class User(db.Model, SerializerMixin):
     _password_hash = db.Column(db.String, nullable=False)
     email = db.Column(db.String, unique=True)
     is_admin = db.Column(db.Boolean, default=False)
+    # is_member = db.Column(db.Boolean, default=False)
     avatar = db.Column(db.String)
     city = db.Column(db.String)
     country = db.Column(db.String)
@@ -113,6 +114,7 @@ class Track(db.Model, SerializerMixin):
     bpm = db.Column(db.Integer)
     audio = db.Column(db.String)
     artist_names = db.Column(db.String)
+    dropbox_url = db.Column(db.String)
 
     release_id = db.Column(db.Integer, db.ForeignKey('releases.id'))
     release = db.relationship('Release', back_populates='tracks')

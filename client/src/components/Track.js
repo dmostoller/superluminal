@@ -59,18 +59,29 @@ export default function Track({id, onDeleteTrack}) {
                                 <span style={{float: "right"}}>
                                     <button 
                                         className="circular ui icon inverted secondary button mini"
+                                        data-inverted="" data-tooltip="Download Mp3" data-position="bottom center"
                                         onClick={() => {
                                             handleDownload(
                                                 `${track.audio}`,
                                                 `${track.artist_names} - ${track.title}.mp3`
                                               );
                                         }}>
-                                        <i className="cloud download alternate icon"></i>
+                                        <i className="arrow circle down icon"></i>
                                     </button>
-                                    <button onClick={showEditForm} className="circular ui icon inverted secondary button mini">
+                                    <a href={track.dropbox_url}><button
+                                    data-inverted="" data-tooltip="Download WAV" data-position="bottom center"
+                                    className="circular ui icon inverted secondary button mini">
+                                        <i className="cloud download alternate icon" style={{visibility: "visible"}}></i>
+                                    </button>
+                                    </a>
+                                    <button onClick={showEditForm} 
+                                    data-inverted="" data-tooltip="Edit" data-position="bottom center"
+                                    className="circular ui icon inverted secondary button mini">
                                         <i className="edit icon" style={{visibility: "visible"}}></i>
                                     </button>
-                                    <button className="circular ui icon inverted secondary button mini" onClick={handleDeleteTrack}>
+                                    <button 
+                                    data-inverted="" data-tooltip="Delete" data-position="bottom center"
+                                    className="circular ui icon inverted secondary button mini" onClick={handleDeleteTrack}>
                                         <i className="trash icon" style={{visibility: "visible"}}></i>
                                     </button>
                                 </span>
