@@ -31,6 +31,7 @@ import SearchResults from "./components/SearchResults.js";
 import ReleaseDetail from "./components/ReleaseDetail.js";
 import FormTest from "./components/TestForm.js";
 import HelmetMetaData from "./components/HelmetMetaData.js";
+import Dashboard from "./components/Dashboard.js";
 
 
 
@@ -92,6 +93,7 @@ function App() {
           <Route path="/releases/:id/edit" element={<EditRelease/>}/>
           <Route path="/releases/:id" element={<ReleaseDetail/>}/>
           <Route path="/user" element={<User/>}/>
+          <Route path='/dashboard' element={<Dashboard/>}/>
           <Route path="/forum" element={<Forum/>}/>
           <Route path="/search_results/:searchParams" element={<SearchResults/>}/>
           <Route path="/formtest" element={<FormTest />}/>

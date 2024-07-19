@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Menu, Dropdown, DropdownMenu } from 'semantic-ui-react'
 import { NavLink, Link } from "react-router-dom";
 import { useUser } from "../context/user.js"
+import { useAdmin } from '../context/admin.js';
 import Search from './Search.js';
 
 function Nav({onLogout}) {
     const { user } = useUser()
+    const { isAdmin } = useAdmin()
 
     function handleLogout() {
         fetch("/logout", {
@@ -47,7 +49,7 @@ function Nav({onLogout}) {
                     <NavLink className="item" to='/events'>Events</NavLink>
                     <NavLink className="item" to='/about'>Bio</NavLink>
                     <NavLink className="item" to='/forum'>Forum</NavLink>
-                    <a href='https://kabayun.bandcamp.com/' className='item' target='_blank'>Shop</a>  
+                    <a href='https://kabayun.bandcamp.com/' className='item' target='_blank' rel="noreferrer">Shop</a>  
                 </DropdownMenu>
             </Dropdown>
             </>
@@ -72,7 +74,7 @@ function Nav({onLogout}) {
             <NavLink className="item" to='/events'>Events</NavLink>
             <NavLink className="item" to='/about'>Bio</NavLink>
             <NavLink className="item" to='/forum'>Forum</NavLink>  
-            <a href='https://kabayun.bandcamp.com/' className='item' target='_blank'>Shop</a>  
+            <a href='https://kabayun.bandcamp.com/' className='item' target='_blank' rel="noreferrer">Shop</a>  
         </>
         }
             <div className='right menu'>
@@ -93,6 +95,11 @@ function Nav({onLogout}) {
                     <button onClick={handleLogout} style={{marginRight: '3px'}} data-inverted="" data-tooltip="Logout" data-position="bottom center" className="ui circular violet icon button small">
                         <i className="sign out alternate icon"></i>
                     </button>
+                    {isAdmin &&
+                    <Link to='/dashboard' style={{marginRight: '3px'}} data-inverted="" data-tooltip="Dashboard" data-position="bottom center" className="ui circular violet icon button small">
+                        <i className="chartline icon"></i>
+                    </Link>
+                    }
                     <Link to='/user' style={{marginRight: '3px'}} data-inverted="" data-tooltip="User Profile" data-position="bottom right" className="ui circular violet icon button small">
                         <i className="user icon"></i>
                     </Link>
