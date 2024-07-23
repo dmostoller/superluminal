@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useUser } from "../context/user";
 import { useAdmin } from "../context/admin";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 function Dashboard () {
@@ -83,7 +83,7 @@ function Dashboard () {
             <div className="ui inverted container" style={{marginTop: "75px"}}>
                 <h4 className="ui horizontal inverted divider">Dashboard</h4>
                 <div className="ui grid" style={{marginBottom: "25px"}}>
-                <div className="six wide column">
+                    <div className="six wide column">
                         <div className="ui inverted top attached segment">
                             <div className="ui huge inverted basic card">
                                 <div className="content">
@@ -102,54 +102,62 @@ function Dashboard () {
                                 </div>
                             </div>
                         </div>
-                </div>
-                <div className="ten wide column">
-                    <div className="ui centered inverted stackable three cards">
-                        <div className="ui inverted card">
-                            <div className="content">
-                                <div class="right floated meta"><i className="record vinyl icon"></i></div>
-                                <div className="large header">Releases</div>
-                                <div className="description"><span className="ui huge text">{releases.length}</span></div>
+                    </div>
+                    <div className="ten wide column">
+                        <div className="ui centered inverted stackable three cards">
+                            <div className="ui inverted card">
+                                <div className="content">
+                                    <div class="right floated meta"><i className="record vinyl icon"></i></div>
+                                    <div className="large header">Releases</div>
+                                    <div className="description"><span className="ui huge text">{releases.length}</span></div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="ui inverted card">
-                            <div className="content">
-                                <div class="right floated meta"><i className="music icon"></i></div>
-                                <div className="large header">Tracks</div>
-                                <div className="description"><span className="ui huge text">{tracks.length}</span></div>
+                            <div className="ui inverted card">
+                                <div className="content">
+                                    <div class="right floated meta"><i className="music icon"></i></div>
+                                    <div className="large header">Tracks</div>
+                                    <div className="description"><span className="ui huge text">{tracks.length}</span></div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="ui inverted card">
-                            <div className="content">
-                                <div class="right floated meta"><i className="calendar icon"></i></div>
-                                <div className="large header">Events</div>
-                                <div className="description"><span className="ui huge text">{events.length}</span></div>
+                            <div className="ui inverted card">
+                                <div className="content">
+                                    <div class="right floated meta"><i className="calendar icon"></i></div>
+                                    <div className="large header">Events</div>
+                                    <div className="description"><span className="ui huge text">{events.length}</span></div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="ui inverted card">
-                            <div className="content">
-                                <div class="right floated meta"><i className="newspaper icon"></i></div>
-                                <div className="large header">Posts</div>
-                                <div className="description"><span className="ui huge text">{posts.length}</span></div>
+                            <div className="ui inverted card">
+                                <div className="content">
+                                    <div class="right floated meta"><i className="newspaper icon"></i></div>
+                                    <div className="large header">Posts</div>
+                                    <div className="description"><span className="ui huge text">{posts.length}</span></div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="ui inverted card">
-                            <div className="content">
-                                <div class="right floated meta"><i className="comment icon"></i></div>
-                                <div className="large header">Comments</div>
-                                <div className="description"><span className="ui huge text">{comments.length}</span></div>
+                            <div className="ui inverted card">
+                                <div className="content">
+                                    <div class="right floated meta"><i className="comment icon"></i></div>
+                                    <div className="large header">Comments</div>
+                                    <div className="description"><span className="ui huge text">{comments.length}</span></div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="ui inverted card">
-                            <div className="content">
-                                <div class="right floated meta"><i className="comment icon"></i></div>
-                                <div className="large header">P-Comments</div>
-                                <div className="description"><span className="ui huge text">{postComments.length}</span></div>
+                            <div className="ui inverted card">
+                                <div className="content">
+                                    <div class="right floated meta"><i className="comment icon"></i></div>
+                                    <div className="large header">P-Comments</div>
+                                    <div className="description"><span className="ui huge text">{postComments.length}</span></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div className="ui centered padded grid">
+                <Link target='_blank' to='https://analytics.google.com/analytics/web/?authuser=1#/p450805044/reports/intelligenthome'
+                    className='ui large violet labeled icon inverted button'
+                >
+                <i className="chartline icon"></i>
+                Google Analytics
+                </Link>
+                </div>
             </div>
         </div>
         </>
