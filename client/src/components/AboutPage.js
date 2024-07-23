@@ -7,6 +7,7 @@ export default function AboutPage () {
     useEffect(() => {
         window.scrollTo(0, 0)
       }, [])
+      
 return (
     <div className="ui middle aligned center aligned grid" style={{minHeight:"100vh", marginTop: "40px"}}>
     <div style={{width: "90%", margin: "auto", marginTop:"20px", marginBottom:"20px"}} className="ui centered inverted card">
