@@ -32,6 +32,9 @@ import ReleaseDetail from "./components/ReleaseDetail.js";
 import FormTest from "./components/TestForm.js";
 import HelmetMetaData from "./components/HelmetMetaData.js";
 import Dashboard from "./components/Dashboard.js";
+import Favicon from "react-favicon";
+import favUrl from './img/faviconSL.ico'
+
 
 
 
@@ -68,10 +71,12 @@ function App() {
     toast.dark(`Goodbye, thanks for visiting!`);
   }
 
+
   return (
 
   <div style={{backgroundColor: "#303030"}} className="App">
     <HelmetMetaData></HelmetMetaData>
+    <Favicon url={favUrl} />
     <Nav onLogout={handleLogout}/>
     <ToastContainer/>
       <Routes>
