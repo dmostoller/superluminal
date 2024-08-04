@@ -100,7 +100,7 @@ function Nav({onLogout}) {
                         <i className="chartline icon"></i>
                     </Link>
                     }
-                    <Link to='/user' style={{marginRight: '3px'}} data-inverted="" data-tooltip="User Profile" data-position="bottom right" className="ui circular violet icon button small">
+                    <Link to='/user' style={{marginRight: '3px'}} data-inverted="" data-tooltip="User Profile" data-position="bottom right" className="ui circular violet icon button">
                         <i className="user icon"></i>
                     </Link>
                     </>
