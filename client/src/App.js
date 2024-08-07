@@ -30,6 +30,7 @@ import Forum from "./components/Forum.js";
 import SearchResults from "./components/SearchResults.js";
 import ReleaseDetail from "./components/ReleaseDetail.js";
 import FormTest from "./components/TestForm.js";
+import Study from "./components/Study.js";
 import HelmetMetaData from "./components/HelmetMetaData.js";
 import Dashboard from "./components/Dashboard.js";
 import Favicon from "react-favicon";
@@ -102,6 +103,7 @@ function App() {
           <Route path="/forum" element={<Forum/>}/>
           <Route path="/search_results/:searchParams" element={<SearchResults/>}/>
           <Route path="/formtest" element={<FormTest />}/>
+          <Route path="/study" element={<Study/>}/>
       </Routes>
     <Footer />
   </div>
