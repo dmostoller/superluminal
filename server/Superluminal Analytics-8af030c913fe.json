@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "superluminal-ana-1721444251655",
+  "private_key_id": "8af030c913fe1cc3bc721eab89682cef4d4cbf86",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCudM4e3tD+g8+F\nDw6yQC2+GCPc/PoRi8Zg6B7TT0A0hMbXDioWnUojNiwSdRnnI1IIMMVjn6sQhV58\nWMy72e5ksT/hBLCSRJwVYuQiHLAgT4tJ743dTHWf/pLykQgBd4xUQUt2wdPei6sF\ndldnuomFaBDBxbXGLz55EZK76WkgO0INaxC9RDPjgD9lgaP924aZmoYrG0TOuFqU\nGkxnG3EcYHqMM007UAi4Rrkg2E3Y9TXNv+ZbdMQvlIYJSFJgyIaOLjqKJyghclXp\nxtKWrEps1T1rMIKajjFzJR3mhgUR5UsnN5uJRgOuunO+VPeWfwb+WQyOd5d7hu07\nfiJA1OXnAgMBAAECggEAAaRYzPfqPf2t8NcqRhQ45KlOgRsicWgq4ajy9/3Zdq+/\nPVvv787i2T+pHN1cSo14Yq+u0+1h9fcDY3vker97hm1tUqgGz2xKOctN/AzgEtXH\nflZ9CSsEj7vHf0qiftJfZZWdvmGRpcO+btU6el/067wF2FpiMm9/EN2mT2ghf1ZQ\nxXTnUe1ZgSVXyedgt4M5urZSTiUupAH5yFf9zeEf3I1I/XlqSfr6cTBDfQ47YUmC\n303eRuUAKkDXbu1k74bZG17qbs6EmJh58zEPyWxB18dApmJE7Mq8q+GNcRirasLG\nz9LRL0neVqjFgpfm7CTgO7P2d8hJWVY2DDpnRN8juQKBgQDuiLmhbTKpdSx2jPwC\nzC0Uja5RrTgGHeE+bY4SHeV14gy7eI8Wwjw0L4h1xdbTPqwhCs5PbMKu7WDHDJNw\nmANalOlQHf360+kP6TbaKOOObIzTGwShlDLdxZoK++HyKLuNJgbUNERREQDIccJE\n7X0NVEYDIEOZIfHs99PGuL/2+QKBgQC7OvQ1Neu7nPE+ZwNmlT3ftSlp57lHMGla\nr7zLC1U3MdPVLDx8cppUbipfTmT5CdVcoxg448oy5YLMtau9OdC8qB9wCWfiwlXK\nq69zsnPAe4FNnralKr4MYh+oDjetmtnR9BBVkmhurd2RRyUgEZunY0z//aBURxas\nqZLo8LSb3wKBgQCznWbShEyCx8W8WzskzCQh9vHNdPbbvEIw5QP25mYzlwzpWcW9\naHM3BJfnvxqdpPKuStnBeu86E2stV23qeb0Ex17MQllON6WmooD4U5POWjTMferF\n1LdcwX/WR4cC9uMLTRgVUGok9P228dpMVtw0XkH99pyQQbxPKOpiGBoM2QKBgCz9\naZkvr8mRWNbp4gNQcWHEIoN0Ty0wEODdwbv4qS1uJ7zduFsfHr6TClOEfvboygBM\noJFrCzdXtyqBrRb3QZVTwNonKHNwxzTANJTUmMPz6YpBTRo7PxeyrHCxmed5gkXV\nI+esGrQdy1QRiHZAROrgDaylwVT/EA/FX6vhy0R5AoGBALvvDX/SCL+BDrOVzxxI\nrNZV/IXuIEi56KskXk9q8WmRNifQadeb87UtHzMitsUa0HLsZLbJoEtuQ1DcotMP\n7DktBxE02dYql5nx+CPxqbvBs67HdlbZcz+CWrOixk0pDVJZjbAbBC3WHql4/O3W\nIkXvHfyKI9KhLuPEnKJHbZDY\n-----END PRIVATE KEY-----\n",
+  "client_email": "starting-account-vhje76bcl73m@superluminal-ana-1721444251655.iam.gserviceaccount.com",
+  "client_id": "110919736562287205603",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/starting-account-vhje76bcl73m%40superluminal-ana-1721444251655.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

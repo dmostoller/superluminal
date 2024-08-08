@@ -9,6 +9,7 @@ import 'swiper/css/effect-cube';
 
 export default function Testimonials() {
     return(
+        <div className="ui centered basic segment" style={{marginTop: "25px", marginBottom: "25px"}}>
             <Swiper
             modules={[Navigation, Scrollbar, A11y, Autoplay]}
             // navigation
@@ -53,7 +54,8 @@ export default function Testimonials() {
                         <div className="content">
                             <div className="description">
                             {/* "I have to say, the experience here is very unique and tailored to your needs.   */}
-                            Big shout out to Kabayun for his lessons, I truely enjoyed our sessions and have learnt a lot in these few weeks!! What amazes me is the depth of knowledge he covers, and not necessarily limited to a daw or synth!!"
+                            Big shout out to Kabayun for his lessons, I truly enjoyed our sessions and have learned a lot in these few weeks!!
+                             What amazes me is the depth of knowledge he covers, and not necessarily limited to a daw or synth!!"
                             </div>
                         </div>
                         {/* <div className="extra content">- Raghu K.</div> */}
@@ -94,7 +96,7 @@ export default function Testimonials() {
                     <div className="ui inverted basic card">
                         <div className="content">
                             <div className="description">
-                                "Makes total sense and you have a great was of getting things accross!! Thanks so much.""
+                                "Makes total sense and you have a great was of getting things across!! Thanks so much.""
                             </div>
                         </div>
                         {/* <div className="extra content">- anonymous</div> */}
@@ -104,12 +106,13 @@ export default function Testimonials() {
                     <div className="ui inverted basic card">
                         <div className="content">
                             <div className="description">
-                                "Your Patreon's masterclass on the Access Virus is incredible!!"
+                                "Your Patreon masterclass on the Access Virus is incredible!!"
                             </div>
                         </div>
                         {/* <div className="extra content">- anonymous</div> */}
                     </div>
                 </SwiperSlide>
             </Swiper>
+        </div>
     )
 }
