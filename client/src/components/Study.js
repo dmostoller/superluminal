@@ -18,8 +18,16 @@ export default function Study() {
                     </div>
                 </div>
                 <div className='ui center aligned container' style={{marginTop: "25px", marginBottom: "25px"}}>
+                    <h2 className="ui center aligned inverted header">What You Will Learn</h2>'
+                    <div className='ui three column grid'>
+                        <div className='column'><img src={imageBlank} className='ui rounded medium image'></img></div>
+                        <div className='column'><img src={imageBlank} className='ui rounded medium image'></img></div>
+                        <div className='column'><img src={imageBlank} className='ui rounded medium image'></img></div>
+                    </div>
+                </div>
+                <div className='ui center aligned container' style={{marginTop: "25px", marginBottom: "25px"}}>
                 <h2 className="ui center aligned inverted header">Testimonials</h2>
-                    <div className="ui basic centered small cards">
+                    <div className="ui basic inverted centered small cards">
                         <div className="ui card">
                             <div className="content">
                                 <div className="description">
