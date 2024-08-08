@@ -12,10 +12,10 @@ return (
                     <div className="ui center aligned container">    
                             <h1 style={{marginTop: "30px"}} className="ui center aligned icon inverted header">
                                     <i className="large question icon"></i>
-                                    Struggling With Your Production?
+                                    Struggling With Music Production?
                             </h1>
                             <h3 className='ui inverted header' style={{marginTop: "0px"}}>
-                                Take Your Music To The Next Level With Kabayun's Courses
+                                Take Your Skills To The Next Level With Kabayun's Courses & Tutorials
                             </h3>
                             <Link to='https://www.patreon.com/superluminal_kabayun_yasmin/shop' className="ui circular violet button large" target='_blank' style={{marginTop: "0px"}}>
                                     Go to Courses
@@ -116,6 +116,39 @@ return (
                         <div className='card'>
                             <div className='content'>
                                 <div className='icon header'>
+                                    <i className="drum icon"></i>
+                                    Percussion & Groove
+                                </div>
+                                <div className='description'>
+                                    Learn how to create dynamic and groovy percussion patterns and add movement and energy to your tracks.
+                                </div>
+                            </div>
+                        </div>
+                        <div className='card'>
+                            <div className='content'>
+                                <div className='icon header'>
+                                    <i className="sliders horizontal icon"></i>
+                                    Modular Synthesizers
+                                </div>
+                                <div className='description'>
+                                    Explore the world of modular synthesizers and learn how to create complex and evolving sounds.
+                                </div>
+                            </div>
+                        </div>
+                        <div className='card'>
+                            <div className='content'>
+                                <div className='icon header'>
+                                    <i className="wind icon"></i>
+                                    Atmospheres & FX
+                                </div>
+                                <div className='description'>
+                                    Create immersive atmospheres and effects to add depth and texture to your tracks.
+                                </div>
+                            </div>
+                        </div>
+                        <div className='card'>
+                            <div className='content'>
+                                <div className='icon header'>
                                     <i className="comment icon"></i>
                                     Feedback & Support
                                 </div>
@@ -132,35 +165,62 @@ return (
                 <div className='ui center aligned text container' style={{marginTop: "75px", marginBottom: "25px"}}>
                     <h1 className='ui center aligned inverted header'>Frequently Asked Questions</h1>
                     <div className='ui centered grid' style={{marginTop: "50px"}}>
-                        <div className='ui inverted basic cards'>
-                            <div className='ui horizontal card fluid'>
+                        <div className='ui inverted basic small cards'>
+                            <div className='ui horizontal card fluid' style={{marginBottom: "0px"}}>
                                 <div className='content'>
-                                    <div className='header'>Question 1</div>
-                                    <div className='description'>Answer to question 1</div>
+                                    <div className='left aligned header'>How much does it cost?</div>
+                                    <div className='left aligned description'>
+                                        Lessons are priced at $50 per hour. Discounts are available for bulk bookings and long-term commitments. Contact us for more information and to discuss your specific needs and goals.
+                                    </div>
                                 </div>
                             </div>
-                            <div className='ui horizontal card fluid'>
+                            <div className='ui horizontal card fluid' style={{marginBottom: "0px"}}>
                                 <div className='content'>
-                                    <div className='header'>Question 2</div>
-                                    <div className='description'>Answer to question 2</div>
+                                    <div className='left aligned header'>Do I need to already have experience?</div>
+                                    <div className='left aligned description'>
+                                        Lessons are tailored to your individual needs and goals, whether you are a beginner or an experienced producer. 
+                                        Kabayun will work with you to create a personalized lesson plan that will help you achieve your goals and realize your full potential.
+                                    </div>
                                 </div>
                             </div>
-                            <div className='ui horizontal card fluid'>
+                            <div className='ui horizontal card fluid' style={{marginBottom: "0px"}}>
                                 <div className='content'>
-                                    <div className='header'>Question 3</div>
-                                    <div className='description'>Answer to question 3</div>
+                                    <div className='left aligned header'>Do you have flexible payment options?</div>
+                                    <div className='left aligned description'>
+                                        Yes, we offer flexible payment options to suit your needs. Contact us to discuss your specific needs and goals and we will work with you to create a payment plan that works for you.
+                                    </div>
                                 </div>
                             </div>
-                            <div className='ui horizontal card fluid'>
+                            <div className='ui horizontal card fluid' style={{marginBottom: "0px"}}>
                                 <div className='content'>
-                                    <div className='header'>Question 4</div>
-                                    <div className='description'>Answer to question 4</div>
+                                    <div className='left aligned header'>Do I need any specific equipment to take the courses?</div>
+                                    <div className='left aligned description'>
+                                        No, you do not need any specific equipment to take the courses. Kabayun will work with you to create a personalized lesson plan that will help you achieve your goals and realize your full potential.
+                                    </div>
                                 </div>
                             </div>
-                            <div className='ui horizontal card fluid'>
+                            <div className='ui horizontal card fluid' style={{marginBottom: "0px"}}>
                                 <div className='content'>
-                                    <div className='header'>Question 5</div>
-                                    <div className='description'>Answer to question 5</div>
+                                    <div className='left aligned header'>What software do I need?</div>
+                                    <div className='left aligned description'>
+                                        You will need a digital audio workstation (DAW) such as Ableton Live, Cubase, or Bitwig. Kabayun will work with you to create a personalized lesson plan that will help you achieve your goals and realize your full potential.
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ui horizontal card fluid' style={{marginBottom: "0px"}}>
+                                <div className='content'>
+                                    <div className='left aligned header'>What if I only need help on something specific?</div>
+                                    <div className='left aligned description'>
+                                        No problem! Kabayun offers personalized lessons tailored to your specific needs and goals. Whether you need help with sound design, mixing and mastering, arrangement and composition, or any other aspect of music production, Kabayun will work with you to create a lesson plan that meets your needs.
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ui horizontal card fluid' style={{marginBottom: "0px"}}>
+                                <div className='content'>
+                                    <div className='left aligned header'>I dont have money right now, do you have any free content?</div>
+                                    <div className='left aligned description'>
+                                        Yes! We offer a range of free tutorials and resources to help you get started on your music production journey. Check out our free tutorials on the video page to learn more.
+                                    </div>
                                 </div>
                             </div>
                         </div>
