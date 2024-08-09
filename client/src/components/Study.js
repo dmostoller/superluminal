@@ -245,15 +245,15 @@ return (
 
 
 
-                <div className='ui padded basic segment' style={{marginTop: "50px", marginBottom: "50px"}}>
+                <div className='ui padded basic text container' style={{marginTop: "50px", marginBottom: "50px"}}>
                     <div className='ui large centered fluid inverted basic card' style={{padding: "10px", marginTop: "25px"}}>
                         <div className='content'>
                             <div className='description'>
                                 <p>Hey there, fellow music producers!</p>
-                                <p>I wanted to take a moment to invite you to explore all the resources available to you here.</p>
-                                <p>Whether you're just starting out or looking to refine your skills, I've got you covered.</p>
-                                Check out the collection of paid and free videos, webinars, and tutorials that cover a wide range of topics,
-                                <p>from sound design to mixing and mastering, arrangement and composition, workflow and productivity, and more.</p>
+                                <p>I wanted to take a moment to invite you to explore all the resources available to you here. 
+                                Whether you're just starting out or looking to refine your skills, I've got you covered.</p>
+                                <p>Check out the collection of paid and free videos, webinars, and tutorials that cover a wide range of topics,
+                                from sound design to mixing and mastering, arrangement and composition, workflow and productivity, and more.</p>
                                 <p>If you're looking for a more personalized approach, I also offer private lessons where we can dive deep into your specific needs and goals.</p>
                                 <p>Let's take your music to the next level together!</p>
                             </div>
