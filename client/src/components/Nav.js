@@ -48,6 +48,7 @@ function Nav({onLogout}) {
                     <NavLink className="item"  to='/learn'><h4>Video</h4></NavLink>
                     <NavLink className="item" to='/events'><h4>Events</h4></NavLink>
                     <NavLink className="item" to='/about'><h4>Bio</h4></NavLink>
+                    <NavLink className="item" to='/study'><h4>Learn</h4></NavLink>
                     <NavLink className="item" to='/forum'><h4>Forum</h4></NavLink>
                     <a href='https://kabayun.bandcamp.com/' className='item' target='_blank' rel="noreferrer"><h4>Shop</h4></a>  
                 </DropdownMenu>
@@ -73,6 +74,7 @@ function Nav({onLogout}) {
             <NavLink className="item"  to='/learn'>Video</NavLink>
             <NavLink className="item" to='/events'>Events</NavLink>
             <NavLink className="item" to='/about'>Bio</NavLink>
+            <NavLink className="item" to='/study'>Learn</NavLink>
             <NavLink className="item" to='/forum'>Forum</NavLink>  
             <a href='https://kabayun.bandcamp.com/' className='item' target='_blank' rel="noreferrer">Shop</a>  
         </>
