@@ -15,7 +15,7 @@ export default function Testimonials() {
             // navigation
             className='mySwiper'
             autoplay={{
-                delay: 3500,
+                delay: 4000,
                 disableOnInteraction: false,
               }}
             loop={true}
@@ -46,7 +46,7 @@ export default function Testimonials() {
                                 "Thank you for the opportunity to look under the hood of psychedelic music production. There was a lot of interesting and useful information."
                             </div>
                         </div>
-                        <div className="extra content">- Aleksei K.</div>
+                        {/* <div className="extra content">- Aleksei K.</div> */}
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -58,7 +58,7 @@ export default function Testimonials() {
                              What amazes me is the depth of knowledge he covers, and not necessarily limited to a daw or synth!!"
                             </div>
                         </div>
-                        <div className="extra content">- Raghu K.</div>
+                        {/* <div className="extra content">- Raghu K.</div> */}
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -68,7 +68,7 @@ export default function Testimonials() {
                                 "Im really thankful for the workshop you organized, it was super nice and I learned a lot of new stuff. Keep up the good work, thank you!"
                             </div>
                         </div>
-                        <div className="extra content">- Tilen D.</div>
+                        {/* <div className="extra content">- Tilen D.</div> */}
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -78,7 +78,7 @@ export default function Testimonials() {
                                 "Hi David, thanks so much, the lessons have really inspired me a lot. Now for some studio time to put it all into practice!"
                             </div>
                         </div>
-                        <div className="extra content">- anonymous</div>
+                        {/* <div className="extra content">- anonymous</div> */}
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -88,7 +88,7 @@ export default function Testimonials() {
                                 "Brooooo that was so killer! Like seriously, things clicked!"
                             </div>
                         </div>
-                        <div className="extra content">- anonymous</div>
+                        {/* <div className="extra content">- anonymous</div> */}
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -98,7 +98,7 @@ export default function Testimonials() {
                                 "Makes total sense and you have a great was of getting things across!! Thanks so much."
                             </div>
                         </div>
-                        <div className="extra content">- anonymous</div>
+                        {/* <div className="extra content">- anonymous</div> */}
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -111,7 +111,7 @@ export default function Testimonials() {
                                 If you're looking to accelerate your Psy-trance production, Dave is an exceptional resource for mastering the art."
                             </div>
                         </div>
-                        <div className="extra content">- Pranav K.</div>
+                        {/* <div className="extra content">- Pranav K.</div> */}
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -121,7 +121,7 @@ export default function Testimonials() {
                                 "Big thanks yesterday we had a great session sir! Wow, I cannot believe that you showed me two topics and it helped me a lot.... like a LOT."
                             </div>
                         </div>
-                        <div className="extra content">- anonymous</div>
+                        {/* <div className="extra content">- anonymous</div> */}
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -131,7 +131,7 @@ export default function Testimonials() {
                                 "Your Patreon masterclass on the Access Virus is incredible!!"
                             </div>
                         </div>
-                        <div className="extra content">- anonymous</div>
+                        {/* <div className="extra content">- anonymous</div> */}
                     </div>
                 </SwiperSlide>
             </Swiper>

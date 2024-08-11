@@ -15,7 +15,7 @@ return (
                                     Struggling With Music Production?
                             </h1>
                             <h3 className='ui inverted header' style={{marginTop: "0px"}}>
-                                Take Your Skills To The Next Level With Kabayun's Courses & Tutorials
+                                Realize your full potential with Kabayun's courses and tutorials.   
                             </h3>
                             <Link to='https://www.patreon.com/superluminal_kabayun_yasmin/shop' className="ui circular violet button large" target='_blank' style={{marginTop: "0px"}}>
                                     Go to Courses
@@ -32,9 +32,13 @@ return (
                                                             </h1>
                                                             <h4 className='ui inverted header' style={{marginTop: "0px"}}>
                                                                 Kabayun is a world renowned psytrance producer who has been producing music for over 15 years and has released music on some of the biggest labels in the psytrance scene. 
-                                                                He has a wealth of knowledge and experience in music production and sound design and is passionate about helping others achieve their goals and realize their full potential.
+                                                                He has a wealth of knowledge and experience and is passionate about helping others achieve their goals and realize their full potential.
                                                             </h4>
-                                                    </div>
+                                                            <Link to='https://www.patreon.com/superluminal_kabayun_yasmin/shop' className="ui circular violet inverted button small" target='_blank' style={{marginTop: "0px"}}>
+                                                            Go to Courses
+                                                            <i className="arrow right icon"></i>
+                                                             </Link>
+                                                </div>
                                             </div>
                                             <div className='column'>
                                                     <div className='ui centered rounded massive image'>
@@ -55,12 +59,16 @@ return (
                                                             <h1 className='ui inverted icon header'>
                                                                     <i className="large chartline icon"></i>
                                                                     
-                                                                    Elevate Your Productions
+                                                                    Elevate Your Skills
                                                             </h1>
                                                             <h4 className='ui inverted header' style={{marginTop: "0px"}}>
                                                                     Whether you are a beginner or an experienced producer, Kabayun's courses will help you take your productions to the next level. 
                                                                     Learn the techniques and secrets of professional music production and sound design and start creating the music you've always dreamed of.
                                                             </h4>
+                                                            <Link to='https://www.patreon.com/superluminal_kabayun_yasmin/shop' className="ui circular violet inverted button small" target='_blank' style={{marginTop: "0px"}}>
+                                                            Go to Courses
+                                                            <i className="arrow right icon"></i>
+                                                             </Link>
                                                     </div>
                                             </div>
                                     </div>
@@ -158,6 +166,23 @@ return (
                     </div>
                 </div>
 
+
+                <h1 style={{marginTop: "100px", marginBottom:"5px"}} className="ui center aligned icon inverted header">
+                    <i className="large forward icon"></i>
+                    Fast Track Your Music Production Skills
+                </h1>
+                <h4 style={{marginTop: "0px"}} className="ui center aligned inverted header">
+                 Get a head start on your music production journey with Kabayun's courses and tutorials.
+                </h4>
+                <Link to='https://www.patreon.com/superluminal_kabayun_yasmin/shop' target='_blank' className="ui circular violet button large">
+                    Go to Courses
+                    <i className="arrow right icon"></i>
+                </Link>
+                <Link to='/learn' className="ui circular violet button large">
+                    Free Tutorials
+                    <i className="arrow right icon"></i>
+                </Link>
+
                 <h1 className="ui center aligned inverted header" style={{marginTop: "100px", marginBottom: "25px"}}>Testimonials</h1>
                 <Testimonials/>
 
@@ -168,7 +193,7 @@ return (
                         <div className='ui inverted basic small cards'>
                             <div className='ui horizontal card fluid' style={{marginBottom: "0px"}}>
                                 <div className='content'>
-                                    <div className='left aligned header'>How much does it cost?</div>
+                                    <div className='left aligned header'>How much does do private lessons cost?</div>
                                     <div className='left aligned description'>
                                         Lessons are priced at $50 per hour. Discounts are available for bulk bookings and long-term commitments. Contact us for more information and to discuss your specific needs and goals.
                                     </div>
@@ -179,7 +204,7 @@ return (
                                     <div className='left aligned header'>Do I need to already have experience?</div>
                                     <div className='left aligned description'>
                                         Lessons are tailored to your individual needs and goals, whether you are a beginner or an experienced producer. 
-                                        Kabayun will work with you to create a personalized lesson plan that will help you achieve your goals and realize your full potential.
+                                        Kabayun will work with you to create a personalized lesson plan that will help you realize your full potential.
                                     </div>
                                 </div>
                             </div>
@@ -187,7 +212,8 @@ return (
                                 <div className='content'>
                                     <div className='left aligned header'>Do you have flexible payment options?</div>
                                     <div className='left aligned description'>
-                                        Yes, we offer flexible payment options to suit your needs. Contact us to discuss your specific needs and goals and we will work with you to create a payment plan that works for you.
+                                        Yes, we offer flexible payment options to suit your needs. 
+                                        Contact us and we will work with you to create a payment plan that works for you.
                                     </div>
                                 </div>
                             </div>
@@ -195,7 +221,8 @@ return (
                                 <div className='content'>
                                     <div className='left aligned header'>Do I need any specific equipment to take the courses?</div>
                                     <div className='left aligned description'>
-                                        No, you do not need any specific equipment to take the courses. Kabayun will work with you to create a personalized lesson plan that will help you achieve your goals and realize your full potential.
+                                        No, you do not need any specific equipment to take the courses, other than a computer and an internet connection,
+                                         and a passion for music production.
                                     </div>
                                 </div>
                             </div>
@@ -203,7 +230,8 @@ return (
                                 <div className='content'>
                                     <div className='left aligned header'>What software do I need?</div>
                                     <div className='left aligned description'>
-                                        You will need a digital audio workstation (DAW) such as Ableton Live, Cubase, or Bitwig. Kabayun will work with you to create a personalized lesson plan that will help you achieve your goals and realize your full potential.
+                                        If you dont have one already, Kabayun will help get you set up with a 
+                                        digital audio workstation (DAW) such as Ableton Live, Cubase, or Bitwig. 
                                     </div>
                                 </div>
                             </div>
@@ -211,7 +239,9 @@ return (
                                 <div className='content'>
                                     <div className='left aligned header'>What if I only need help on something specific?</div>
                                     <div className='left aligned description'>
-                                        No problem! Kabayun offers personalized lessons tailored to your specific needs and goals. Whether you need help with sound design, mixing and mastering, arrangement and composition, or any other aspect of music production, Kabayun will work with you to create a lesson plan that meets your needs.
+                                        No problem! Whether you need help with sound design, mixing and mastering,
+                                        arrangement and composition, or any other aspect of music production, 
+                                        Kabayun will work with you to create a lesson plan that meets your needs.
                                     </div>
                                 </div>
                             </div>
@@ -219,7 +249,8 @@ return (
                                 <div className='content'>
                                     <div className='left aligned header'>I dont have money right now, do you have any free content?</div>
                                     <div className='left aligned description'>
-                                        Yes! We offer a range of free tutorials and resources to help you get started on your music production journey. Check out our free tutorials on the video page to learn more.
+                                        Yes! We offer a range of free tutorials and resources to help you get started on your music production journey. 
+                                        Check out our free tutorials on the video page!
                                     </div>
                                 </div>
                             </div>
@@ -233,7 +264,9 @@ return (
                     <i className="large rocket icon"></i>
                     Are you ready to take your music to the next level?
                 </h1>
-                <h4 style={{marginTop: "0px"}} className="ui center aligned inverted header">Join Kabayun's courses and start creating the music you've always dreamed of.</h4>
+                <h4 style={{marginTop: "0px"}} className="ui center aligned inverted header">
+                    Get started today with Kabayun's courses and tutorials.
+                </h4>
                 <Link to='https://www.patreon.com/superluminal_kabayun_yasmin/shop' target='_blank' className="ui circular violet button large">
                     Go to Courses
                     <i className="arrow right icon"></i>
@@ -245,7 +278,7 @@ return (
 
 
 
-                <div className='ui padded basic text container' style={{marginTop: "50px", marginBottom: "50px"}}>
+                <div className='ui padded basic text container' style={{marginTop: "75px", marginBottom: "75px"}}>
                     <div className='ui large centered fluid inverted basic card' style={{padding: "10px", marginTop: "25px"}}>
                         <div className='content'>
                             <div className='description'>
@@ -255,7 +288,9 @@ return (
                                 <p>Check out the collection of paid and free videos, webinars, and tutorials that cover a wide range of topics,
                                 from sound design to mixing and mastering, arrangement and composition, workflow and productivity, and more.</p>
                                 <p>If you're looking for a more personalized approach, I also offer private lessons where we can dive deep into your specific needs and goals.</p>
-                                <p>Let's take your music to the next level together!</p>
+                                <p>
+                                    I look forward to helping you on your musical journey!
+                                </p>
                             </div>
                             <div className="extra content" style={{marginTop: "15px"}}>
                                 <div className=" author">
@@ -271,7 +306,7 @@ return (
                     Private Lessons
                 </h1>
                 <h4 style={{marginTop: "0px"}} className="ui center aligned inverted header">
-                    Take your music to the next level with personalized one on one lessons with Kabayun.
+                 Enter your name and email address for more information about one-on-one lessons with Kabayun.
                 </h4>
                 <div className='ui center aligned grid' style={{marginTop: "0px", marginBottom: "100px"}}>
                     <div className='ui basic centered segment'>
