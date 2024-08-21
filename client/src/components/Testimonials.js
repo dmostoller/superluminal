@@ -40,7 +40,7 @@ export default function Testimonials() {
             }
             >
                 <SwiperSlide>
-                    <div className="ui inverted basic card">
+                    <div className="ui inverted card" style={{marginTop: "5px"}}>
                         <div className="content">
                             <div className="description">
                                 "Thank you for the opportunity to look under the hood of psychedelic music production. There was a lot of interesting and useful information."
@@ -50,7 +50,7 @@ export default function Testimonials() {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="ui inverted basic card">
+                    <div className="ui inverted card" style={{marginTop: "5px"}}>
                         <div className="content">
                             <div className="description">
                             "I have to say, the experience here is very unique and tailored to your needs, the format of the webinars and delivery is perfect.
@@ -62,7 +62,7 @@ export default function Testimonials() {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="ui inverted basic card">
+                    <div className="ui inverted card" style={{marginTop: "5px"}}>
                         <div className="content">
                             <div className="description">
                                 "Im really thankful for the workshop you organized, it was super nice and I learned a lot of new stuff. Keep up the good work, thank you!"
@@ -72,7 +72,7 @@ export default function Testimonials() {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="ui inverted basic card">
+                    <div className="ui inverted card" style={{marginTop: "5px"}}>
                         <div className="content">
                             <div className="description">
                                 "Hi David, thanks so much, the lessons have really inspired me a lot. Now for some studio time to put it all into practice!"
@@ -82,7 +82,7 @@ export default function Testimonials() {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="ui inverted basic card">
+                    <div className="ui inverted card" style={{marginTop: "5px"}}>
                         <div className="content">
                             <div className="description">
                                 "Brooooo that was so killer! Like seriously, things clicked!"
@@ -92,7 +92,7 @@ export default function Testimonials() {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="ui inverted basic card">
+                    <div className="ui inverted card" style={{marginTop: "5px"}}>
                         <div className="content">
                             <div className="description">
                                 "Makes total sense and you have a great was of getting things across!! Thanks so much."
@@ -102,7 +102,7 @@ export default function Testimonials() {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="ui inverted basic card">
+                    <div className="ui inverted card" style={{marginTop: "5px"}}>
                         <div className="content">
                             <div className="description">
                                 "Kabayun's classes have been an invaluable guiding force in my journey as a producer. 
@@ -115,7 +115,7 @@ export default function Testimonials() {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="ui inverted basic card">
+                    <div className="ui inverted card" style={{marginTop: "5px"}}>
                         <div className="content">
                             <div className="description">
                                 "Big thanks yesterday we had a great session sir! Wow, I cannot believe that you showed me two topics and it helped me a lot.... like a LOT."
@@ -125,7 +125,7 @@ export default function Testimonials() {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="ui inverted basic card">
+                    <div className="ui inverted card" style={{marginTop: "5px"}}>
                         <div className="content">
                             <div className="description">
                                 "Your Patreon masterclass on the Access Virus is incredible!!"
