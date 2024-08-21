@@ -1,6 +1,7 @@
 import imageBlank from './assets/image-blank.png';
 import Testimonials from './Testimonials';
 import headShot from './assets/headshot.jpg';
+import FAQ from './FAQ';
 import { Link } from 'react-router-dom';
 import image1 from './assets/image1.png';
 import image2 from './assets/image2.png';   
@@ -10,19 +11,9 @@ return (
     <div className="ui container" style={{backgroundColor: "#303030"}} >
             <div className="ui middle aligned center aligned grid" style={{minHeight:"100vh", marginTop: "50px"}}>
                     <div className="ui center aligned container">    
-                            <h1 style={{marginTop: "30px"}} className="ui center aligned icon inverted header">
-                                    <i className="large question icon"></i>
-                                    Struggling With Music Production?
-                            </h1>
-                            <h3 className='ui inverted header' style={{marginTop: "0px"}}>
-                                Realize your full potential with Kabayun's courses and tutorials.   
-                            </h3>
-                            <Link to='https://www.patreon.com/superluminal_kabayun_yasmin/shop' className="ui circular violet button large" target='_blank' style={{marginTop: "0px"}}>
-                                    Go to Courses
-                                    <i className="arrow right icon"></i>
-                            </Link>
+                            
 
-                            <div className='ui basic segment' style={{marginTop: "50px"}}>
+                            <div className='ui inverted very padded piled segment' style={{marginTop: "50px"}}>
                                     <div className="ui two column very relaxed stackable grid">
                                             <div className='column'>
                                                     <div className='ui padded basic segment'>
@@ -47,7 +38,22 @@ return (
                                             </div>
                                     </div>
                             </div>
-                            <div className='ui basic segment' style={{marginTop: "50px", marginBottom: "50px"}}>
+
+
+                            <h1 style={{marginTop: "30px"}} className="ui center aligned icon inverted header">
+                                    <i className="large question icon"></i>
+                                    Struggling With Music Production?
+                            </h1>
+                            <h3 className='ui inverted header' style={{marginTop: "0px"}}>
+                                Realize your full potential with Kabayun's courses and tutorials.   
+                            </h3>
+                            <Link to='https://www.patreon.com/superluminal_kabayun_yasmin/shop' className="ui circular violet button large" target='_blank' style={{marginTop: "0px"}}>
+                                    Go to Courses
+                                    <i className="arrow right icon"></i>
+                            </Link>
+
+
+                            <div className='ui inverted very padded piled segment' style={{marginTop: "50px", marginBottom: "50px"}}>
                                     <div className="ui two column very relaxed stackable grid">
                                             <div className='column'>
                                                     <div className='ui centered rounded massive image'>
@@ -75,7 +81,7 @@ return (
                             </div>
                 <h2 className="ui center aligned inverted header" style={{marginTop: "75px"}}>What You Will Learn</h2>'
                 <div className='ui center aligned padded grid' style={{marginBottom: "25px"}}>
-                    <div className='ui three link stackable inverted cards'>
+                    <div className='ui three stackable inverted cards'>
                         <div className='card'>
                             <div className='content'>
                                 <div className='icon header'>
@@ -186,79 +192,7 @@ return (
                 <h1 className="ui center aligned inverted header" style={{marginTop: "100px", marginBottom: "25px"}}>Testimonials</h1>
                 <Testimonials/>
 
-
-                <div className='ui center aligned text container' style={{marginTop: "75px", marginBottom: "25px"}}>
-                    <h1 className='ui center aligned inverted header'>Frequently Asked Questions</h1>
-                    <div className='ui centered grid' style={{marginTop: "50px"}}>
-                        <div className='ui inverted basic small cards'>
-                            <div className='ui horizontal card fluid' style={{marginBottom: "0px"}}>
-                                <div className='content'>
-                                    <div className='left aligned header'>How much does do private lessons cost?</div>
-                                    <div className='left aligned description'>
-                                        Lessons are priced at $50 per hour. Discounts are available for bulk bookings and long-term commitments. Contact us for more information and to discuss your specific needs and goals.
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='ui horizontal card fluid' style={{marginBottom: "0px"}}>
-                                <div className='content'>
-                                    <div className='left aligned header'>Do I need to already have experience?</div>
-                                    <div className='left aligned description'>
-                                        Lessons are tailored to your individual needs and goals, whether you are a beginner or an experienced producer. 
-                                        Kabayun will work with you to create a personalized lesson plan that will help you realize your full potential.
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='ui horizontal card fluid' style={{marginBottom: "0px"}}>
-                                <div className='content'>
-                                    <div className='left aligned header'>Do you have flexible payment options?</div>
-                                    <div className='left aligned description'>
-                                        Yes, we offer flexible payment options to suit your needs. 
-                                        Contact us and we will work with you to create a payment plan that works for you.
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='ui horizontal card fluid' style={{marginBottom: "0px"}}>
-                                <div className='content'>
-                                    <div className='left aligned header'>Do I need any specific equipment to take the courses?</div>
-                                    <div className='left aligned description'>
-                                        No, you do not need any specific equipment to take the courses, other than a computer and an internet connection,
-                                         and a passion for music production.
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='ui horizontal card fluid' style={{marginBottom: "0px"}}>
-                                <div className='content'>
-                                    <div className='left aligned header'>What software do I need?</div>
-                                    <div className='left aligned description'>
-                                        If you dont have one already, Kabayun will help get you set up with a 
-                                        digital audio workstation (DAW) such as Ableton Live, Cubase, or Bitwig. 
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='ui horizontal card fluid' style={{marginBottom: "0px"}}>
-                                <div className='content'>
-                                    <div className='left aligned header'>What if I only need help on something specific?</div>
-                                    <div className='left aligned description'>
-                                        No problem! Whether you need help with sound design, mixing and mastering,
-                                        arrangement and composition, or any other aspect of music production, 
-                                        Kabayun will work with you to create a lesson plan that meets your needs.
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='ui horizontal card fluid' style={{marginBottom: "0px"}}>
-                                <div className='content'>
-                                    <div className='left aligned header'>I dont have money right now, do you have any free content?</div>
-                                    <div className='left aligned description'>
-                                        Yes! We offer a range of free tutorials and resources to help you get started on your music production journey. 
-                                        Check out our free tutorials on the video page!
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
+                <FAQ/>
 
                 <h1 style={{marginTop: "100px", marginBottom:"5px"}} className="ui center aligned icon inverted header">
                     <i className="large rocket icon"></i>
@@ -279,7 +213,7 @@ return (
 
 
                 <div className='ui padded basic text container' style={{marginTop: "75px", marginBottom: "75px"}}>
-                    <div className='ui large centered fluid inverted basic card' style={{padding: "10px", marginTop: "25px"}}>
+                    <div className='ui large centered fluid inverted card' style={{padding: "10px", marginTop: "25px"}}>
                         <div className='content'>
                             <div className='description'>
                                 <p>Hey there, fellow music producers!</p>
@@ -301,6 +235,7 @@ return (
                     </div>
                 </div>
 
+            
                 <h1 style={{marginTop: "50px", marginBottom:"0px"}} className="ui center aligned icon inverted header">
                     <i className="large chalkboard teacher icon"></i>
                     Private Lessons
