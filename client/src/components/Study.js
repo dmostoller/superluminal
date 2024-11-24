@@ -1,10 +1,14 @@
-import imageBlank from './assets/image-blank.png';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { useNavigate } from 'react-router-dom';
 import Testimonials from './Testimonials';
-import headShot from './assets/headshot.jpg';
+import headShot from './assets/kaba.jpg';
 import FAQ from './FAQ';
 import { Link } from 'react-router-dom';
 import image1 from './assets/image1.png';
 import image2 from './assets/image2.png';   
+import StudyForm from './StudyForm';
+
 
 export default function Study() {
 return (
@@ -246,7 +250,7 @@ return (
                 <div className='ui center aligned grid' style={{marginTop: "0px", marginBottom: "100px"}}>
                     <div className='ui basic centered segment'>
                         <div className='ui text container'>
-                            <div className='ui inverted form'>
+                            {/* <div className='ui inverted form'>
                                 <div className='equal width fields'>
                                     <div className='field'>
                                         <label>Name</label>
@@ -264,19 +268,13 @@ return (
                                     </div>
                                 </div>
                                 <div className='ui circular fluid large violet submit button'>Inquire About Private Lessons</div>
-                            </div>
+                            </div> */}
+                        <StudyForm/>
                         </div>
                     </div>
                 </div>
 
             </div>
-
-
-
-
-
-
-
         </div>
     </div>
   );

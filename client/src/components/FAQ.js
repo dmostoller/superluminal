@@ -13,7 +13,7 @@ const FAQ = () => {
   const faqItems = [
     {
       title: 'How much does do private lessons cost?',
-      content: 'Lessons are priced at $50 per hour. Discounts are available for bulk bookings and long-term commitments. Contact us for more information and to discuss your specific needs and goals.'
+      content: 'Lessons are priced at $75 per hour, and the price includes not only the lesson time, but also presets and samples if the student wants them, as well as feedback on your music whenever you want it (within reason).  Discounts are available for bulk bookings and long-term commitments. Contact us for more information and to discuss your specific needs and goals.'
     },
     {
       title: 'Do I need to already have experience?',
