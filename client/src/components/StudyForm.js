@@ -11,7 +11,7 @@ const StudyForm = () => {
     if(window.confirm("Are you sure you want to send this inquiry?")){ 
       emailjs.sendForm(
         'service_jz3d31c', 
-        'template_avspnq3', 
+        'template_sau8r19', 
         form.current, 
         '2CBV5usGCJRMr4WbB'
       )
